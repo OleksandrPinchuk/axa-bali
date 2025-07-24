@@ -3,14 +3,34 @@
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
+  border: 1px solid green;
+  width: 200px;
 }
 
 .nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  border: 1px solid red;
+  width: 200px;
+  height: 50px;
+}
+
+.nav-links {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  flex-direction: column;
+  background: #fff;
+  width: 100%;
+  display: none;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links li {
+  padding: 10px 20px;
 }
 
 .nav-list {

@@ -1,22 +1,56 @@
 <header class="header">
   <div class="container">
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="../img/logo.png"></use>
-        </svg>
-      </a>
       <a href="/">
-        <img src="../assets/images/logo.png" alt="logo" />
+        <img src="../assets/images/logo.png" alt="logo" width="200" height="50" class="nav-logo" />
       </a>
-      <ul class="nav-list">
+      <!-- <ul class="nav-list">
         <li class="nav-item">
           <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
         </li>
+      </ul> -->
+
+      <!-- <button class="burger" id="burger-btn" aria-label="Toggle menu">
+        ☰
+      </button> -->
+
+      <button type="button" class="mob-menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use class="icon-menu" href="./images/icons.svg#mob-menu"></use>
+        </svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Головна</a></li>
+        <li><a href="/about">Про нас</a></li>
+        <li><a href="/services">Послуги</a></li>
+        <li><a href="/services">Обʼєкти</a></li>
+        <li><a href="/services">Інвестиції на Балі</a></li>
+        <li><a href="/services">FAQ</a></li>
+        <li><a href="/services">Відгуки</a></li>
+        <li><a href="/contact">Контакти</a></li>
       </ul>
     </nav>
+
+    <!-- <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="mobile-menu__container">
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="./index.html" class="mobile-nav__link mobile-nav__link--current ">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Контакти</a></li>
+          </ul>
+        </nav>
+      </div> -->
+
+
   </div>
+
 </header>
