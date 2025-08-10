@@ -22,3 +22,14 @@
   padding-left: 50px;
   padding-right: 50px;
 }
+
+@mixin button {
+  width: 217px;
+  height: 60px;
+  background-color: rgb(31, 42, 54);
+  color: #E6DADA;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  border-radius: 5px;
+}

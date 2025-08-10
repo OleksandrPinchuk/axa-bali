@@ -1,3 +1,4 @@
+@use './variables';
 @import "modern-normalize/modern-normalize.css";
 
 *,
@@ -9,9 +10,10 @@
 body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
+  color: variables.$main-text-color;
 }
 
 h1,
@@ -58,6 +60,10 @@ button {
 button,
 button * {
   user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .active {

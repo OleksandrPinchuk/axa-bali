@@ -1,0 +1,79 @@
+@use '../base';
+
+.team{
+  background-color: base.$black-background-color;
+
+  &__container{
+    padding-top: 30px;
+    @include base.container-mob;
+
+    @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
+      padding-top: 60px;
+      @include base.container-tab;
+    }
+
+    @media only screen and (min-width: base.$desktop) {
+      width: 1300px;
+      // padding-top: 37px;
+      @include base.container-desc;
+    }
+  }
+
+  &__header {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: base.$white-color;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    ;
+    // font-weight: 600;
+    // line-height: 1.2;
+    color: base.$white-color;
+    // text-align: center;
+  }
+
+  &__item:not(:last-child){
+    margin-bottom: 15px;
+  }
+
+  &__image {
+    // height: 200px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+
+    & img {
+      width: clamp(180px, calc(100vw - 30px), 1270px);
+      display: block;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__info {
+    width: clamp(180px, calc(100vw - 30px), 1270px);
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    background-color: #fff;
+  }
+
+  &__name{
+    font-size: 18px;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+
+  //     color: base.$white-color;
+  }
+
+  &__role{
+      text-align: center;
+  }
+
+
+}

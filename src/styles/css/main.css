@@ -8,9 +8,10 @@
 body {
   margin: 0;
   font-family: "DM Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
+  color: #144444;
 }
 
 h1,
@@ -57,6 +58,10 @@ button {
 button,
 button * {
   user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .active {
@@ -208,7 +213,7 @@ main {
   background: linear-gradient(to bottom, #dee9e7 0%, #ffffff 50%, rgb(31, 42, 54) 50%, rgb(31, 42, 54) 100%);
   height: 460px;
 }
-.home-container {
+.home__container {
   padding-top: 30px;
   min-width: 320px;
   margin: 0 auto;
@@ -216,7 +221,7 @@ main {
   padding-right: 16px;
 }
 @media (min-width: 810px) and (max-width: 1199px) {
-  .home-container {
+  .home__container {
     padding-top: 60px;
     margin: 0 auto;
     padding-left: 30px;
@@ -224,7 +229,7 @@ main {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .home-container {
+  .home__container {
     width: 1300px;
     padding-top: 37px;
     margin: 0 auto;
@@ -233,7 +238,7 @@ main {
     padding-right: 50px;
   }
 }
-.home-title {
+.home__header {
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: 600;
@@ -242,32 +247,115 @@ main {
   text-align: center;
 }
 @media (min-width: 810px) {
-  .home-title {
+  .home__header {
     font-size: 48px;
   }
 }
-.home-image {
+.home__image {
   text-align: center;
   overflow: hidden;
 }
-.home-image img {
-  max-width: 100%;
+.home__image img {
+  max-width: 362px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
 }
-.home-button {
+@media (min-width: 810px) {
+  .home__image img {
+    max-width: 100%;
+  }
+}
+.home__button {
   width: 217px;
   height: 60px;
-  margin: 30px auto 0 auto;
-  border: solid 1px rgb(207, 216, 227);
   background-color: rgb(31, 42, 54);
   color: #E6DADA;
   font-size: 14px;
   font-weight: 600;
   line-height: 21px;
   border-radius: 5px;
+  margin: 30px auto 0 auto;
+  border: solid 1px rgb(207, 216, 227);
+}
+
+.services {
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 30px;
+}
+.services__link {
+  font-family: "Bricolage Grotesque", sans-serif;
+  display: block;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #144444;
+  text-align: center;
+}
+.services__link:hover {
+  color: #55EDCA;
+}
+.services__box {
+  margin-top: 30px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 24px 0px;
+  border-radius: 10px;
+}
+.services__header {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #144444;
+  text-align: center;
+}
+@media (min-width: 810px) {
+  .services__header {
+    font-size: 48px;
+  }
+}
+.services__image {
+  text-align: center;
+  overflow: hidden;
+}
+.services__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.services__button {
+  width: 217px;
+  height: 60px;
+  background-color: rgb(31, 42, 54);
+  color: #E6DADA;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  border-radius: 5px;
+  margin: 30px auto;
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  .services {
+    padding-top: 60px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .services {
+    width: 1300px;
+    padding-top: 73px;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .about {
@@ -298,6 +386,38 @@ main {
   background-color: #dee9e7;
   border-radius: 10px;
 }
+.about__box {
+  background-color: #1F2A36;
+  padding: 10px;
+  border-radius: 10px;
+}
+.about__image {
+  height: 200px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.about__image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.about__header {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.about__text {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
 .about__button {
   width: 100%;
   height: 48px;
@@ -310,42 +430,6 @@ main {
   font-weight: 600;
   line-height: 21px;
   border-radius: 5px;
-}
-
-.experience__box {
-  background-color: #1F2A36;
-  padding: 10px;
-  border-radius: 10px;
-}
-.experience__image {
-  height: 200px;
-  text-align: center;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-.experience__image img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  object-fit: cover;
-}
-.experience__title {
-  margin-bottom: 30px;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #ffffff;
-}
-.experience__text {
-  margin-bottom: 30px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #ffffff;
 }
 
 .digits {
@@ -379,18 +463,139 @@ main {
   color: #144444;
 }
 .digits__text {
-  font-family: "DM Sans", sans-serif;
-  font-size: 14px;
+  text-align: center;
+}
+.digits__header {
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 1.5;
+  font-weight: 600;
+  line-height: 1;
   color: #144444;
   text-align: center;
 }
 
+.team {
+  background-color: #1F2A36;
+}
+.team__container {
+  padding-top: 30px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  .team__container {
+    padding-top: 60px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .team__container {
+    width: 1300px;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.team__header {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.team__text {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+.team__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.team__image {
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.team__image img {
+  width: clamp(180px, 100vw - 30px, 1270px);
+  display: block;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team__info {
+  width: clamp(180px, 100vw - 30px, 1270px);
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+}
+.team__name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+.team__role {
+  text-align: center;
+}
+
+.footer {
+  background-color: #1F2A36;
+}
+.footer__container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 30px;
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  .footer__container {
+    padding-top: 60px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .footer__container {
+    width: 1300px;
+    padding-top: 120px;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.footer__header {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.footer__text {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+.footer__button {
+  width: 217px;
+  height: 60px;
+  background-color: rgb(31, 42, 54);
+  color: #E6DADA;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  border-radius: 5px;
+}
+
 .mobile-menu {
   position: fixed;
-  top: 0px;
+  top: 80px;
   left: 0px;
   width: 100%;
   z-index: 9;
@@ -414,7 +619,6 @@ main {
   flex-direction: column;
   background-color: #1F2A36;
 }
-
 .mobile-link {
   font-weight: 500;
   font-size: 22px;
