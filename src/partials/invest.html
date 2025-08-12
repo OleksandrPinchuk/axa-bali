@@ -1,0 +1,56 @@
+<section class="invest">
+  <div >
+    <!-- <video src="https://framerusercontent.com/assets/tkPvgAN4nbOyfX74ZMfpJXGrkl0.mp4"></video> -->
+    <div class="video-preview" id="ytPreview" data-video-id="dQw4w9WgXcQ" >
+      >
+      <!-- Постер з YouTube (автоматично) -->
+      <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Прев’ю відео">
+      <div class="play-button">▶</div>
+    </div>
+  </div>
+  <div>
+    <h2>Відкрий інвестиційні можливості Балі</h2>
+    <ul>
+      <li>
+        <svg></svg>
+        <p>Tailored solutions for your business needs</p>
+      </li>
+      <li>
+        <p>Engaging visuals that tell your brand story</p>
+      </li>
+      <li>
+        <p>Proven strategies for maximum impact</p>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <h2>Інвестуй в нерухомість на Балі безпечно і подбай про свій капітал незалежності</h2>
+    <p>Співпрацюйте з нами для розробки індивідуальних стратегій, що сприяють успіху. Наші експерти готові проконсультувати вас з будь-якого питання.</p>
+    <button>Отримати консультацію</button>
+  </div>
+</section>
+<!-- <script>
+  document.getElementById('ytPreview').addEventListener('click', function () {
+    const videoId = this.dataset.videoId;
+    const iframe = document.createElement('iframe');
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    iframe.frameBorder = "0";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowFullscreen = true;
+    this.innerHTML = ""; // очищаємо прев’ю
+    this.appendChild(iframe);
+  });
+</script> -->
+<script>
+  document.getElementById('ytPreview').addEventListener('click', function () {
+    const videoId = this.dataset.videoId;
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    iframe.allowFullscreen = true;
+    this.innerHTML = ""; // очищаємо прев’ю
+    this.appendChild(iframe);
+  });
+</script>
