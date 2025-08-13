@@ -4,7 +4,7 @@
   background-color: base.$black-background-color;
 
   &__container{
-    padding-top: 30px;
+    top: 30px 0;
     @include base.container-mob;
 
     @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
