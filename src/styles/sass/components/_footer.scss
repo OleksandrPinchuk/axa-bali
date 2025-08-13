@@ -4,8 +4,8 @@
   background-color: base.$black-background-color;
 
   &__container{
+    padding: 30px 0;
     @include base.container-mob;
-    padding-top: 30px;
 
     @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
       padding-top: 60px;

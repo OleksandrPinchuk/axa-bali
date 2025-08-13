@@ -4,12 +4,16 @@
   background: linear-gradient(to bottom, base.$green-background-color 0%, base.$white-color 50%, rgb(31, 42, 54) 50%, rgb(31, 42, 54) 100%);
   height: 460px;
 
+  @media (min-width: base.$tablet) {
+      height: 100%;
+    }
+
   &__container{
     // background-image: url('/images/home-img.jpg');
     // background-repeat: no-repeat;
     //   background-position: center;
     //   background-size: contain;
-    padding-top: 30px;
+    padding: 30px 0;
     @include base.container-mob;
 
     @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
@@ -48,16 +52,29 @@
     // padding: 0 10px;
 
 
+
     & img {
-      max-width: 362px;
-      height: auto;
       margin-left: auto;
       margin-right: auto;
       border-radius: 10px;
 
+      @media (max-width: (base.$tablet - 1)) {
+        max-width: 362px;
+        height: auto;
+      }
+
+
       @media (min-width: (base.$tablet)) {
-          max-width: 100%;
-        }
+        width: 100%;
+        object-fit: cover;
+        height: calc(270px + (130 * ((100vw - 810px) / (1200 - 810))));
+      }
+
+      @media (min-width: (base.$desktop)) {
+        width: 100%;
+        object-fit: cover;
+        height: 400px;
+      }
     }
 
 
