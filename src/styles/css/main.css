@@ -114,7 +114,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 28px;
+  gap: 40px;
 }
 @media screen and (max-width: 1199px) {
   .nav-list-desk {
@@ -311,6 +311,11 @@ main {
   color: #144444;
   text-align: center;
 }
+@media (min-width: 810px) and (max-width: 1199px) {
+  .services__link {
+    font-size: 22px;
+  }
+}
 .services__link:hover {
   color: #55EDCA;
 }
@@ -333,9 +338,18 @@ main {
     font-size: 48px;
   }
 }
+.services__text {
+  font-size: 16px;
+}
 .services__image {
   text-align: center;
   overflow: hidden;
+  border-radius: 10px;
+}
+@media (min-width: 810px) {
+  .services__image {
+    height: 350px;
+  }
 }
 .services__image img {
   max-width: 100%;
@@ -373,8 +387,7 @@ main {
 }
 
 .objects {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
   min-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
@@ -382,6 +395,8 @@ main {
 }
 @media (min-width: 810px) and (max-width: 1199px) {
   .objects {
+    padding-top: 60px;
+    padding-bottom: 30px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -403,13 +418,36 @@ main {
   font-size: 18px;
   text-align: center;
 }
+@media (min-width: 810px) {
+  .objects__header {
+    font-size: 22px;
+  }
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  .objects__list {
+    display: flex;
+    gap: 30px;
+  }
+}
 .objects__item {
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 24px 0px;
   border-radius: 10px;
 }
-.objects__item:not(:last-child) {
-  margin-bottom: 15px;
+@media (max-width: 810px) {
+  .objects__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  .objects__item {
+    padding: 15px;
+    width: calc((100% - 60px) / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
 }
 .objects__name {
   margin-bottom: 20px;
@@ -420,11 +458,16 @@ main {
 }
 @media (min-width: 810px) {
   .objects__name {
-    font-size: 48px;
+    font-size: 20px;
   }
 }
 .objects__text {
   text-align: center;
+}
+@media (min-width: 810px) {
+  .objects__text {
+    font-size: 16px;
+  }
 }
 .objects__image {
   overflow: hidden;
@@ -451,6 +494,11 @@ main {
   margin-right: auto;
   margin-left: auto;
 }
+@media (min-width: 810px) {
+  .objects__button {
+    width: 205px;
+  }
+}
 
 .invest {
   background: linear-gradient(180deg, #ffffff 0%, #dee9e7 60%);
@@ -464,6 +512,7 @@ main {
 }
 @media (min-width: 810px) and (max-width: 1199px) {
   .invest__container {
+    padding-bottom: 60px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -487,6 +536,11 @@ main {
   line-height: 1.2;
   margin-bottom: 20px;
 }
+@media (min-width: 810px) {
+  .invest__header {
+    font-size: 28px;
+  }
+}
 .invest__item {
   display: flex;
   align-items: center;
@@ -499,6 +553,11 @@ main {
 }
 .invest__svg use {
   fill: #55EDCA;
+}
+@media (min-width: 810px) {
+  .invest__text {
+    font-size: 16px;
+  }
 }
 .invest__box {
   background-color: #55EDCA;
@@ -513,9 +572,20 @@ main {
   text-align: center;
   margin-bottom: 30px;
 }
+@media (min-width: 810px) {
+  .invest__title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
 .invest__describtion {
   text-align: center;
   margin-bottom: 30px;
+}
+@media (min-width: 810px) {
+  .invest__describtion {
+    font-size: 18px;
+  }
 }
 .invest__button {
   width: 217px;
@@ -528,6 +598,11 @@ main {
   border-radius: 5px;
   height: 48px;
   width: 100%;
+}
+@media (min-width: 810px) {
+  .invest__button {
+    font-size: 16px;
+  }
 }
 
 .video-card {
@@ -636,6 +711,7 @@ main {
 }
 @media (min-width: 810px) and (max-width: 1199px) {
   .faq {
+    padding: 60px 0;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -654,10 +730,29 @@ main {
   padding-bottom: 30px;
   border-bottom: 1px solid #ddd;
 }
+@media (min-width: 810px) {
+  .faq__title {
+    display: flex;
+    gap: 50px;
+  }
+}
 .faq__header {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 20px;
+}
+@media (min-width: 810px) {
+  .faq__header {
+    min-width: 350px;
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 810px) {
+  .faq__text {
+    min-width: 350px;
+    font-size: 18px;
+  }
 }
 .faq__item {
   border-bottom: 1px solid #ddd;
@@ -683,6 +778,11 @@ main {
   overflow: hidden;
   transition: max-height 0.3s ease;
   font-weight: normal;
+}
+@media (min-width: 810px) {
+  .faq__answer {
+    font-size: 16px;
+  }
 }
 
 .faq__question .icon::before,
@@ -727,6 +827,7 @@ main {
 }
 @media (min-width: 810px) and (max-width: 1199px) {
   .about {
+    padding: 60px 0;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -751,12 +852,22 @@ main {
   padding: 10px;
   border-radius: 10px;
 }
+@media (min-width: 810px) {
+  .about__box {
+    padding: 30px;
+  }
+}
 .about__image {
   height: 200px;
   text-align: center;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 30px;
+}
+@media (min-width: 810px) {
+  .about__image {
+    height: 400px;
+  }
 }
 .about__image img {
   display: block;
@@ -774,9 +885,19 @@ main {
   line-height: 1.2;
   color: #ffffff;
 }
+@media (min-width: 810px) {
+  .about__header {
+    font-size: 28px;
+  }
+}
 .about__text {
   margin-bottom: 30px;
   color: #ffffff;
+}
+@media (min-width: 810px) {
+  .about__text {
+    font-size: 16px;
+  }
 }
 .about__button {
   width: 100%;
@@ -790,6 +911,11 @@ main {
   font-weight: 600;
   line-height: 21px;
   border-radius: 5px;
+}
+@media (min-width: 810px) {
+  .about__button {
+    font-size: 16px;
+  }
 }
 
 .digits {
@@ -822,8 +948,15 @@ main {
   line-height: 1;
   color: #144444;
 }
-.digits__text {
-  text-align: center;
+@media (min-width: 810px) {
+  .digits__counter {
+    font-size: 42px;
+  }
+}
+@media (min-width: 810px) {
+  .digits__text {
+    font-size: 16px;
+  }
 }
 .digits__header {
   font-size: 18px;
@@ -833,12 +966,17 @@ main {
   color: #144444;
   text-align: center;
 }
+@media (min-width: 810px) {
+  .digits__header {
+    font-size: 20px;
+  }
+}
 
 .team {
   background-color: #1F2A36;
 }
 .team__container {
-  padding-top: 30px;
+  padding: 30px 0;
   min-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
@@ -846,7 +984,7 @@ main {
 }
 @media (min-width: 810px) and (max-width: 1199px) {
   .team__container {
-    padding-top: 60px;
+    padding: 60px 0;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -861,6 +999,16 @@ main {
     padding-right: 50px;
   }
 }
+@media (min-width: 810px) {
+  .team__describtion {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
 .team__header {
   margin-bottom: 20px;
   font-size: 22px;
@@ -868,12 +1016,54 @@ main {
   line-height: 1.2;
   color: #ffffff;
 }
+@media (min-width: 810px) {
+  .team__header {
+    font-size: 28px;
+    min-width: 350px;
+  }
+}
 .team__text {
   margin-bottom: 30px;
   color: #ffffff;
 }
-.team__item:not(:last-child) {
-  margin-bottom: 15px;
+@media (min-width: 810px) {
+  .team__text {
+    font-size: 18px;
+    min-width: 350px;
+  }
+}
+@media (min-width: 810px) {
+  .team__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .team__list {
+    flex-wrap: nowrap;
+  }
+}
+.team__item {
+  width: clamp(180px, 100vw - 30px, 1270px);
+}
+@media (min-width: 810px) {
+  .team__item {
+    width: calc((100% - 60px) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  .team__item {
+    width: 370px;
+  }
+}
+@media (max-width: 810px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 .team__image {
   text-align: center;
@@ -887,8 +1077,17 @@ main {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 810px) {
+  .team__image img {
+    width: calc((100vw - 90px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .team__image img {
+    width: 403.3333333333px;
+  }
+}
 .team__info {
-  width: clamp(180px, 100vw - 30px, 1270px);
   padding: 30px;
   border-radius: 0 0 10px 10px;
   background-color: #fff;
@@ -898,9 +1097,20 @@ main {
   font-weight: 600;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 15px;
+}
+@media (min-width: 810px) {
+  .team__name {
+    font-size: 20px;
+  }
 }
 .team__role {
   text-align: center;
+}
+@media (min-width: 810px) {
+  .team__role {
+    font-size: 16px;
+  }
 }
 
 .footer {

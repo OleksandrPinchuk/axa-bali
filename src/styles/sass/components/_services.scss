@@ -15,6 +15,10 @@
     color: base.$main-text-color;
     text-align: center;
 
+    @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
+        font-size: 22px;
+      }
+
     &:hover{
       color: base.$accent-color;
     }
@@ -44,9 +48,18 @@
       // }
   }
 
+  &__text {
+    font-size: 16px;
+  }
+
   &__image {
     text-align: center;
     overflow: hidden;
+    border-radius: base.$border-radius;
+
+    @media (min-width: (base.$tablet)) {
+        height: 350px;
+      }
 
 
     & img {

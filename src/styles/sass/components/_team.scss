@@ -4,11 +4,11 @@
   background-color: base.$black-background-color;
 
   &__container{
-    top: 30px 0;
+    padding: 30px 0;
     @include base.container-mob;
 
     @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
-      padding-top: 60px;
+      padding: 60px 0;
       @include base.container-tab;
     }
 
@@ -19,12 +19,28 @@
     }
   }
 
+  &__describtion {
+    @media (min-width: base.$tablet) {
+        display: flex;
+        gap: 60px;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+  }
+
   &__header {
     margin-bottom: 20px;
     font-size: 22px;
     font-weight: 600;
     line-height: 1.2;
     color: base.$white-color;
+
+    @media (min-width: base.$tablet) {
+        font-size: 28px;
+        min-width: 350px;
+      }
   }
 
   &__text {
@@ -34,10 +50,47 @@
     // line-height: 1.2;
     color: base.$white-color;
     // text-align: center;
+    @media (min-width: base.$tablet) {
+        font-size: 18px;
+        min-width: 350px;
+      }
+
   }
 
+  &__list {
+    @media (min-width: base.$tablet) {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+      }
+
+    @media (min-width: base.$desktop) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item {
+    width: clamp(180px, calc(100vw - 30px), 1270px);
+
+    @media (min-width: base.$tablet) {
+        width: calc((100% - 2*30px) / 2);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+    @media (min-width: base.$desktop) {
+      width: calc((1200px - 90px) / 3);
+    }
+
+  }
+
+
   &__item:not(:last-child){
-    margin-bottom: 15px;
+    @media (max-width: base.$tablet) {
+        margin-bottom: 15px;
+      }
   }
 
   &__image {
@@ -52,11 +105,19 @@
       height: 100%;
       margin-left: auto;
       margin-right: auto;
+
+      @media (min-width: base.$tablet) {
+          width: calc((100vw - 90px) / 2);
+        }
+
+      @media (min-width: base.$desktop) {
+        width: calc((1300px - 90px) / 3);
+      }
     }
   }
 
   &__info {
-    width: clamp(180px, calc(100vw - 30px), 1270px);
+    // width: clamp(180px, calc(100vw - 30px), 1270px);
     padding: 30px;
     border-radius: 0 0 10px 10px;
     background-color: #fff;
@@ -64,15 +125,24 @@
 
   &__name{
     font-size: 18px;
-      font-weight: 600;
-      line-height: 1.2;
-      text-align: center;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 15px;
+
+    @media (min-width: base.$tablet) {
+        font-size: 20px;
+      }
 
   //     color: base.$white-color;
   }
 
   &__role{
-      text-align: center;
+    text-align: center;
+
+    @media (min-width: base.$tablet) {
+        font-size: 16px;
+      }
   }
 
 

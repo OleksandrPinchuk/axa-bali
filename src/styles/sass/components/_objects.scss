@@ -1,12 +1,12 @@
 @use '../base';
 
 .objects {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0;
   @include base.container-mob;
 
   @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
-    // padding-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 30px;
     @include base.container-tab;
   }
 
@@ -23,6 +23,20 @@
   &__header {
     font-size: 18px;
     text-align: center;
+
+    @media (min-width: (base.$tablet)) {
+        font-size: 22px;
+      }
+  }
+
+  &__list {
+
+    @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
+        display: flex;
+        gap: 30px;
+        // width: calc((100% - 2*30px) / 3);
+      }
+
   }
 
   &__item{
@@ -30,9 +44,23 @@
     box-shadow: base.$box-shadow;
     border-radius: base.$border-radius;
 
-    &:not(:last-child) {
-      margin-bottom: 15px;
+    @media (max-width: base.$tablet) {
+
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+
+    @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
+      padding: 15px;
+      width: calc((100% - 2*30px) / 3);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 0px;
     }
+
+
   }
 
   &__name{
@@ -43,7 +71,7 @@
     text-align: center;
 
     @media (min-width: (base.$tablet)) {
-      font-size: 48px;
+      font-size: 20px;
     }
 
     // @media only screen and (min-width: base.$desktop) {
@@ -53,6 +81,9 @@
 
   &__text {
     text-align: center;
+    @media (min-width: (base.$tablet)) {
+        font-size: 16px;
+      }
   }
 
   &__image {
@@ -75,5 +106,9 @@
     @include base.button;
     margin-right: auto;
     margin-left: auto;
+
+    @media (min-width: base.$tablet) {
+        width: 205px;
+      }
   }
 }

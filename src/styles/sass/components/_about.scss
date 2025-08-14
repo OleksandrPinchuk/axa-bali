@@ -5,7 +5,7 @@
   @include base.container-mob;
 
   @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
-    // padding-top: 60px;
+    padding: 60px 0;
     @include base.container-tab;
   }
 
@@ -24,8 +24,11 @@
   &__box {
     background-color: base.$black-background-color;
     padding: 10px;
-
     border-radius: 10px;
+
+    @media (min-width: base.$tablet) {
+        padding: 30px;
+      }
   }
 
   &__image {
@@ -34,6 +37,10 @@
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 30px;
+
+    @media (min-width: base.$tablet) {
+        height: 400px;
+      }
 
     & img {
       display: block;
@@ -53,6 +60,10 @@
     line-height: 1.2;
     color: base.$white-color;
     // text-align: center;
+
+    @media (min-width: base.$tablet) {
+        font-size: 28px;
+      }
   }
 
   &__text {
@@ -62,6 +73,10 @@
     // line-height: 1.2;
     color: base.$white-color;
     // text-align: center;
+
+    @media (min-width: base.$tablet) {
+        font-size: 16px;
+      }
   }
 
   &__button{
@@ -76,6 +91,10 @@
     font-weight: 600;
     line-height: 21px;
     border-radius: 5px;
+
+    @media (min-width: base.$tablet) {
+        font-size: 16px;
+      }
   }
 }
 
@@ -111,10 +130,16 @@
     font-weight: 500;
     line-height: 1.0;
     color: base.$main-text-color;
+
+    @media (min-width: base.$tablet) {
+        font-size: 42px;
+      }
   }
 
   &__text {
-    text-align: center;
+    @media (min-width: base.$tablet) {
+        font-size: 16px;
+      }
   }
 
     &__header{
@@ -124,5 +149,9 @@
       line-height: 1.0;
       color: base.$main-text-color;
       text-align: center;
+
+      @media (min-width: base.$tablet) {
+          font-size: 20px;
+        }
     }
 }
