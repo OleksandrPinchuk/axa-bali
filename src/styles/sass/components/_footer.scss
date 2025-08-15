@@ -6,21 +6,31 @@
   &__container{
     padding: 30px 0;
     @include base.container-mob;
+    justify-content: space-around;
 
-    @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
+    @media (min-width: base.$tablet) {
       padding-top: 60px;
       @include base.container-tab;
+      display: flex;
+      gap: 30px;
     }
 
     @media only screen and (min-width: base.$desktop) {
-      width: 1300px;
+      max-width: 1300px;
       padding-top: 120px;
       @include base.container-desc;
     }
   }
 
-  &__main{
+  &__framer {
+    display: flex;
+      gap: 30px;
+  }
 
+  &__main{
+    @media (min-width: base.$tablet) {
+        max-width: 480px;
+      }
   }
 
   &__header{
@@ -29,6 +39,10 @@
     font-weight: 600;
     line-height: 1.2;
     color: base.$white-color;
+
+    @media (min-width: base.$tablet) {
+        font-size: 28px;
+      }
   }
 
   &__text {
@@ -36,6 +50,10 @@
       // line-height: 1.2;
       color: base.$white-color;
       margin-bottom: 30px;
+
+      @media (min-width: base.$tablet) {
+          // font-size: 16px;
+        }
   }
 
   &__button{
@@ -49,10 +67,18 @@
     font-weight: 600;
     line-height: 21px;
     border-radius: 5px;
+
+    @media (min-width: base.$tablet) {
+        width: 200px;
+      }
   }
 
   &__nav {
     margin-top: 30px;
+    @media (min-width: base.$tablet) {
+        margin-top: 0;
+      }
+
   }
 
   &__title{
@@ -76,6 +102,9 @@
     font-weight: 400;
     line-height: 1.5;
     color: base.$white-color;
+    @media (min-width: base.$tablet) {
+        // font-size: 16px;
+      }
   }
 
   &__social {

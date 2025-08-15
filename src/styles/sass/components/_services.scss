@@ -4,6 +4,17 @@
   @include base.container-mob;
   padding-top: 30px;
 
+  @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
+      padding-top: 60px;
+      @include base.container-tab;
+    }
+
+  @media only screen and (min-width: base.$desktop) {
+    max-width: 1300px;
+    padding-top: 73px;
+    @include base.container-desc;
+  }
+
   &__link{
     // font-family: "DM Sans", sans-serif;
     font-family: "Bricolage Grotesque", sans-serif;
@@ -80,15 +91,4 @@
     margin: 30px auto;
   }
 
-
-  @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
-      padding-top: 60px;
-      @include base.container-tab;
-    }
-
-  @media only screen and (min-width: base.$desktop) {
-    width: 1300px;
-    padding-top: 73px;
-    @include base.container-desc;
-  }
 }

@@ -11,7 +11,7 @@
   }
 
   @media only screen and (min-width: base.$desktop) {
-    width: 1300px;
+    max-width: 1300px;
     // padding-top: 37px;
     @include base.container-desc;
   }

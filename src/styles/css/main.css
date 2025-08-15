@@ -181,7 +181,7 @@ html {
 .consultation-button {
   align-items: center;
   border: none;
-  width: 194px;
+  width: 210px;
   height: 48px;
   background-color: rgb(31, 42, 54);
   border-radius: 5px;
@@ -231,7 +231,7 @@ main {
 }
 @media only screen and (min-width: 1200px) {
   .home__container {
-    width: 1300px;
+    max-width: 1300px;
     padding-top: 37px;
     margin: 0 auto;
     max-width: 1300px;
@@ -271,6 +271,7 @@ main {
   .home__image img {
     width: 100%;
     object-fit: cover;
+    object-position: center;
     height: calc(270px + 130 * (100vw - 810px) / 390);
   }
 }
@@ -300,6 +301,24 @@ main {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 30px;
+}
+@media (min-width: 810px) and (max-width: 1199px) {
+  .services {
+    padding-top: 60px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .services {
+    max-width: 1300px;
+    padding-top: 73px;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 .services__link {
   font-family: "Bricolage Grotesque", sans-serif;
@@ -367,24 +386,6 @@ main {
   border-radius: 5px;
   margin: 30px auto;
 }
-@media (min-width: 810px) and (max-width: 1199px) {
-  .services {
-    padding-top: 60px;
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .services {
-    width: 1300px;
-    padding-top: 73px;
-    margin: 0 auto;
-    max-width: 1300px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
 
 .objects {
   padding: 30px 0;
@@ -404,7 +405,7 @@ main {
 }
 @media only screen and (min-width: 1200px) {
   .objects {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
@@ -520,7 +521,7 @@ main {
 }
 @media only screen and (min-width: 1200px) {
   .invest__container {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
@@ -719,7 +720,7 @@ main {
 }
 @media only screen and (min-width: 1200px) {
   .faq {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
@@ -835,7 +836,7 @@ main {
 }
 @media only screen and (min-width: 1200px) {
   .about {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
@@ -992,7 +993,7 @@ main {
 }
 @media only screen and (min-width: 1200px) {
   .team__container {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
@@ -1122,23 +1123,35 @@ main {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
+  justify-content: space-around;
 }
-@media (min-width: 810px) and (max-width: 1199px) {
+@media (min-width: 810px) {
   .footer__container {
     padding-top: 60px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    gap: 30px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .footer__container {
-    width: 1300px;
+    max-width: 1300px;
     padding-top: 120px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+.footer__framer {
+  display: flex;
+  gap: 30px;
+}
+@media (min-width: 810px) {
+  .footer__main {
+    max-width: 480px;
   }
 }
 .footer__header {
@@ -1147,6 +1160,11 @@ main {
   font-weight: 600;
   line-height: 1.2;
   color: #ffffff;
+}
+@media (min-width: 810px) {
+  .footer__header {
+    font-size: 28px;
+  }
 }
 .footer__text {
   color: #ffffff;
@@ -1164,8 +1182,18 @@ main {
   line-height: 21px;
   border-radius: 5px;
 }
+@media (min-width: 810px) {
+  .footer__button {
+    width: 200px;
+  }
+}
 .footer__nav {
   margin-top: 30px;
+}
+@media (min-width: 810px) {
+  .footer__nav {
+    margin-top: 0;
+  }
 }
 .footer__title {
   margin-bottom: 18px;

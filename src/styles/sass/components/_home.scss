@@ -22,7 +22,7 @@
     }
 
     @media only screen and (min-width: base.$desktop) {
-      width: 1300px;
+      max-width: 1300px;
       padding-top: 37px;
       @include base.container-desc;
     }
@@ -67,6 +67,7 @@
       @media (min-width: (base.$tablet)) {
         width: 100%;
         object-fit: cover;
+        object-position: center;
         height: calc(270px + (130 * ((100vw - 810px) / (1200 - 810))));
       }
 
