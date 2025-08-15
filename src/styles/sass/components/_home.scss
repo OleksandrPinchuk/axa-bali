@@ -85,6 +85,10 @@
     @include base.button;
     margin: 30px auto 0 auto ;
     border: solid 1px rgb(207, 216, 227);
+
+    @media only screen and (min-width: base.$desktop) {
+        font-size: 16px;
+      }
   }
 }
 

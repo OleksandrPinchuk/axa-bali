@@ -73,7 +73,7 @@ html {
   border-bottom: 1px solid #e0e0e0;
   z-index: 1000;
 }
-.header-container {
+.header__container {
   padding: 15px 15px 15px 15px;
   margin-left: auto;
   margin-right: auto;
@@ -81,104 +81,47 @@ html {
   min-width: 320px;
 }
 @media (min-width: 810px) and (max-width: 1199px) {
-  .header-container {
+  .header__container {
     padding: 15px 30px 15px 30px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .header-container {
+  .header__container {
     max-width: 1300px;
     padding: 15px 50px 15px 50px;
   }
 }
-
-.logo-img {
-  width: 211px;
-  height: auto;
-  display: block;
-  aspect-ratio: 4/1;
-  object-fit: cover;
-}
-
-.nav {
+.header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
-.nav-container {
-  display: flex;
-}
-
-.nav-list-desk {
+.header__list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
 }
 @media screen and (max-width: 1199px) {
-  .nav-list-desk {
+  .header__list {
     display: none;
   }
 }
-
-.nav-link {
+.header__link {
   font-family: "Bricolage Grotesque" sans-serif;
   font-size: 16px;
   line-height: 1.2;
   color: rgb(20, 68, 68);
   transition: 200ms ease-in;
 }
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header__link:hover, .header__link:focus {
+  color: #55EDCA;
 }
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
-}
-
-.nav-link.active::after {
+.header .nav-link.active::after {
   background: #747bff;
 }
-
-.menu-button {
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  height: 100%;
-  background-color: rgb(245, 250, 252);
-  color: black;
-}
-.menu-button svg {
-  width: 40px;
-  height: 40px;
-  overflow-clip-margin: content-box;
-  overflow: hidden;
-}
-@media screen and (max-width: 1199px) {
-  .menu-button {
-    display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .menu-button {
-    display: none;
-  }
-}
-
-.consultation-button {
+.header__button {
   align-items: center;
   border: none;
   width: 210px;
@@ -191,13 +134,52 @@ html {
   line-height: 1.5;
 }
 @media screen and (max-width: 1199px) {
-  .consultation-button {
+  .header__button {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .consultation-button {
+  .header__button {
     display: block;
+  }
+}
+
+.active {
+  border-bottom: 2px solid #144444;
+  color: #144444;
+}
+
+.logo__img {
+  width: 211px;
+  height: auto;
+  display: block;
+  aspect-ratio: 4/1;
+  object-fit: cover;
+}
+
+.menu__button {
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 100%;
+  background-color: rgb(245, 250, 252);
+  color: black;
+}
+.menu__button svg {
+  width: 40px;
+  height: 40px;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+@media screen and (max-width: 1199px) {
+  .menu__button {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__button {
+    display: none;
   }
 }
 
@@ -288,11 +270,16 @@ main {
   background-color: rgb(31, 42, 54);
   color: #E6DADA;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 21px;
+  font-weight: 400;
+  line-height: 1.5;
   border-radius: 5px;
   margin: 30px auto 0 auto;
   border: solid 1px rgb(207, 216, 227);
+}
+@media only screen and (min-width: 1200px) {
+  .home__button {
+    font-size: 16px;
+  }
 }
 
 .services {
@@ -313,7 +300,7 @@ main {
 @media only screen and (min-width: 1200px) {
   .services {
     max-width: 1300px;
-    padding-top: 73px;
+    padding-top: 60px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
@@ -321,6 +308,7 @@ main {
   }
 }
 .services__link {
+  margin-bottom: 30px;
   font-family: "Bricolage Grotesque", sans-serif;
   display: block;
   font-size: 18px;
@@ -335,14 +323,35 @@ main {
     font-size: 22px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .services__link {
+    margin-bottom: 60px;
+    font-size: 26px;
+  }
+}
 .services__link:hover {
   color: #55EDCA;
 }
 .services__box {
-  margin-top: 30px;
   padding: 30px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 0px 24px 0px;
   border-radius: 10px;
+}
+@media only screen and (min-width: 1200px) {
+  .services__box {
+    padding: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .services__framer {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .services__info {
+    max-width: 550px;
+  }
 }
 .services__header {
   margin-bottom: 20px;
@@ -354,11 +363,16 @@ main {
 }
 @media (min-width: 810px) {
   .services__header {
-    font-size: 48px;
+    font-size: 32px;
   }
 }
 .services__text {
   font-size: 16px;
+}
+@media only screen and (min-width: 1200px) {
+  .services__text {
+    font-size: 18px;
+  }
 }
 .services__image {
   text-align: center;
@@ -381,10 +395,16 @@ main {
   background-color: rgb(31, 42, 54);
   color: #E6DADA;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 21px;
+  font-weight: 400;
+  line-height: 1.5;
   border-radius: 5px;
   margin: 30px auto;
+}
+@media only screen and (min-width: 1200px) {
+  .services__button {
+    width: 220px;
+    font-size: 16px;
+  }
 }
 
 .objects {
@@ -394,7 +414,7 @@ main {
   padding-left: 16px;
   padding-right: 16px;
 }
-@media (min-width: 810px) and (max-width: 1199px) {
+@media (min-width: 810px) {
   .objects {
     padding-top: 60px;
     padding-bottom: 30px;
@@ -405,7 +425,6 @@ main {
 }
 @media only screen and (min-width: 1200px) {
   .objects {
-    max-width: 1300px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
@@ -424,7 +443,12 @@ main {
     font-size: 22px;
   }
 }
-@media (min-width: 810px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) {
+  .objects__header {
+    font-size: 26px;
+  }
+}
+@media (min-width: 810px) {
   .objects__list {
     display: flex;
     gap: 30px;
@@ -440,7 +464,7 @@ main {
     margin-bottom: 15px;
   }
 }
-@media (min-width: 810px) and (max-width: 1199px) {
+@media (min-width: 810px) {
   .objects__item {
     padding: 15px;
     width: calc((100% - 60px) / 3);
@@ -448,6 +472,11 @@ main {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .objects__item {
+    padding: 30px;
   }
 }
 .objects__name {
@@ -462,12 +491,22 @@ main {
     font-size: 20px;
   }
 }
+@media only screen and (min-width: 1200px) {
+  .objects__name {
+    font-size: 22px;
+  }
+}
 .objects__text {
   text-align: center;
 }
 @media (min-width: 810px) {
   .objects__text {
     font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .objects__text {
+    font-size: 18px;
   }
 }
 .objects__image {
@@ -489,8 +528,8 @@ main {
   background-color: rgb(31, 42, 54);
   color: #E6DADA;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 21px;
+  font-weight: 400;
+  line-height: 1.5;
   border-radius: 5px;
   margin-right: auto;
   margin-left: auto;
@@ -498,6 +537,11 @@ main {
 @media (min-width: 810px) {
   .objects__button {
     width: 205px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .objects__button {
+    font-size: 16px;
   }
 }
 
@@ -528,7 +572,7 @@ main {
     padding-right: 50px;
   }
 }
-.invest__card {
+.invest__box {
   margin-bottom: 30px;
 }
 .invest__header {
@@ -560,7 +604,7 @@ main {
     font-size: 16px;
   }
 }
-.invest__box {
+.invest__framer {
   background-color: #55EDCA;
   border-radius: 10px;
   padding: 30px;
@@ -594,8 +638,8 @@ main {
   background-color: rgb(31, 42, 54);
   color: #E6DADA;
   font-size: 14px;
-  font-weight: 600;
-  line-height: 21px;
+  font-weight: 400;
+  line-height: 1.5;
   border-radius: 5px;
   height: 48px;
   width: 100%;
@@ -606,7 +650,12 @@ main {
   }
 }
 
-.video-card {
+.video {
+  /* Напівпрозорий градієнт */
+  /* Прев’ю зображення */
+  /* Центральна кнопка Play */
+}
+.video__box {
   width: 100%;
   max-width: 900px;
   aspect-ratio: 16/9;
@@ -614,19 +663,19 @@ main {
   border-radius: 10px;
   margin-bottom: 30px;
   overflow: hidden;
-  background: #000;
   display: block;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   cursor: pointer;
 }
-
-.video-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.45);
+.video__box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.3));
+  transition: background 0.2s ease;
+  pointer-events: none;
 }
-
-/* Прев’ю зображення */
-.video-card img {
+.video__image {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -636,23 +685,7 @@ main {
   display: block;
   user-select: none;
 }
-
-/* Напівпрозорий градієнт */
-.video-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.3));
-  transition: background 0.2s ease;
-  pointer-events: none;
-}
-
-.video-card:hover::after {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.28));
-}
-
-/* Центральна кнопка Play */
-.center-play {
+.video__play {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -660,16 +693,15 @@ main {
   z-index: 5;
   pointer-events: none;
 }
-
-.center-play .btn {
+.video__play .btn {
   pointer-events: auto;
-  min-width: 72px;
-  min-height: 72px;
-  border-radius: 50%;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 5px;
   font-size: 18px;
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: white;
+  background: #55EDCA;
+  border: none;
+  color: black;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -677,14 +709,10 @@ main {
   backdrop-filter: blur(4px);
   transition: background 0.14s ease, transform 0.14s ease;
 }
-
-.center-play .btn:hover {
-  background: rgba(0, 0, 0, 0.65);
+.video__play .btn:hover {
   transform: scale(1.08);
 }
-
-/* iframe YouTube */
-.video-card iframe {
+.video__box iframe {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -692,16 +720,6 @@ main {
   border: none;
 }
 
-@media (max-width: 720px) {
-  .video-card {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  .center-play .btn {
-    min-width: 56px;
-    min-height: 56px;
-  }
-}
 .faq {
   padding-top: 30px;
   padding-bottom: 30px;

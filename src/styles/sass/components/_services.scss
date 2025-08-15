@@ -11,12 +11,12 @@
 
   @media only screen and (min-width: base.$desktop) {
     max-width: 1300px;
-    padding-top: 73px;
+    padding-top: 60px;
     @include base.container-desc;
   }
 
   &__link{
-    // font-family: "DM Sans", sans-serif;
+    margin-bottom: 30px;
     font-family: "Bricolage Grotesque", sans-serif;
     display: block;
     font-size: 18px;
@@ -30,16 +30,37 @@
         font-size: 22px;
       }
 
+    @media only screen and (min-width: base.$desktop) {
+      margin-bottom: 60px;
+      font-size: 26px;
+    }
+
     &:hover{
       color: base.$accent-color;
     }
   }
 
   &__box {
-    margin-top: 30px;
     padding: 30px;
     box-shadow: base.$box-shadow;
     border-radius: base.$border-radius;
+
+    @media only screen and (min-width: base.$desktop) {
+        padding: 60px;
+      }
+  }
+
+  &__framer {
+    @media only screen and (min-width: base.$desktop) {
+        display: flex;
+        gap: 30px;
+      }
+  }
+
+  &__info {
+    @media only screen and (min-width: base.$desktop) {
+        max-width: 550px;
+      }
   }
 
   &__header{
@@ -51,16 +72,20 @@
       text-align: center;
 
       @media (min-width: (base.$tablet)) {
-        font-size: 48px;
+        font-size: 32px;
       }
 
       // @media only screen and (min-width: base.$desktop) {
-      //   font-size: 48px;
+      //   font-size: 32px;
       // }
   }
 
   &__text {
     font-size: 16px;
+
+    @media only screen and (min-width: base.$desktop) {
+        font-size: 18px;
+    }
   }
 
   &__image {
@@ -89,6 +114,12 @@
   &__button{
     @include base.button;
     margin: 30px auto;
+
+    @media only screen and (min-width: base.$desktop) {
+      width: 220px;
+      font-size: 16px;
+    }
   }
+
 
 }
