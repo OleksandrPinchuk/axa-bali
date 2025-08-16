@@ -563,13 +563,20 @@ main {
     padding-right: 30px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .invest__container {
     max-width: 1300px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
     padding-right: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .invest__holder {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
   }
 }
 .invest__box {
@@ -584,6 +591,11 @@ main {
 @media (min-width: 810px) {
   .invest__header {
     font-size: 28px;
+  }
+}
+@media (min-width: 1200px) {
+  .invest__header {
+    font-size: 38px;
   }
 }
 .invest__item {
@@ -604,13 +616,24 @@ main {
     font-size: 16px;
   }
 }
+@media (min-width: 1200px) {
+  .invest__text {
+    font-size: 18px;
+  }
+}
 .invest__framer {
   background-color: #55EDCA;
   border-radius: 10px;
   padding: 30px;
 }
+@media (min-width: 1200px) {
+  .invest__framer {
+    padding: 50px;
+  }
+}
 .invest__icon use {
-  fill: black;
+  fill: red;
+  color: red;
 }
 .invest__title {
   line-height: 1.3;
@@ -621,6 +644,11 @@ main {
   .invest__title {
     font-size: 28px;
     font-weight: 600;
+  }
+}
+@media (min-width: 1200px) {
+  .invest__title {
+    font-size: 38px;
   }
 }
 .invest__describtion {
@@ -647,6 +675,14 @@ main {
 @media (min-width: 810px) {
   .invest__button {
     font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .invest__button {
+    height: 60px;
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -852,7 +888,7 @@ main {
     padding-right: 30px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .about {
     max-width: 1300px;
     margin: 0 auto;
@@ -874,6 +910,13 @@ main {
 @media (min-width: 810px) {
   .about__box {
     padding: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__box {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
   }
 }
 .about__image {
@@ -909,6 +952,11 @@ main {
     font-size: 28px;
   }
 }
+@media (min-width: 1200px) {
+  .about__header {
+    font-size: 38px;
+  }
+}
 .about__text {
   margin-bottom: 30px;
   color: #ffffff;
@@ -916,6 +964,11 @@ main {
 @media (min-width: 810px) {
   .about__text {
     font-size: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .about__text {
+    font-size: 18px;
   }
 }
 .about__button {
@@ -936,6 +989,13 @@ main {
     font-size: 16px;
   }
 }
+@media (min-width: 1200px) {
+  .about__button {
+    width: 280px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
 
 .digits {
   display: flex;
@@ -943,6 +1003,11 @@ main {
   justify-content: space-between;
   gap: 30px;
   padding: 30px 20px 20px;
+}
+@media (min-width: 1200px) {
+  .digits {
+    flex-wrap: nowrap;
+  }
 }
 .digits__item {
   display: flex;
@@ -977,6 +1042,11 @@ main {
     font-size: 16px;
   }
 }
+@media (min-width: 1200px) {
+  .digits__text {
+    font-size: 18px;
+  }
+}
 .digits__header {
   font-size: 18px;
   font-style: normal;
@@ -988,6 +1058,13 @@ main {
 @media (min-width: 810px) {
   .digits__header {
     font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .digits__header {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 

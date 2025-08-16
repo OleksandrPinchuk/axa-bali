@@ -13,11 +13,18 @@
       @include base.container-tab;
     }
 
-    @media only screen and (min-width: base.$desktop) {
+    @media (min-width: base.$desktop) {
       max-width: 1300px;
       // padding-top: 37px;
       @include base.container-desc;
-      // display: flex;
+    }
+  }
+
+  &__holder {
+    @media (min-width: base.$desktop) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 50px;
     }
   }
 
@@ -32,8 +39,12 @@
     margin-bottom: 20px;
 
     @media (min-width: base.$tablet) {
-        font-size: 28px;
-      }
+      font-size: 28px;
+    }
+
+    @media (min-width: base.$desktop) {
+      font-size: 38px;
+    }
   }
 
   &__item {
@@ -54,8 +65,12 @@
 
   &__text {
     @media (min-width: base.$tablet) {
-        font-size: 16px;
-      }
+      font-size: 16px;
+    }
+
+    @media (min-width: base.$desktop) {
+      font-size: 18px;
+    }
   }
 
   &__framer {
@@ -63,11 +78,16 @@
     border-radius: base.$border-radius;
     padding: 30px;
 
+    @media (min-width: base.$desktop) {
+        padding: 50px;
+      }
   }
 
   &__icon {
+    // fill: red;
     & use {
-        fill: black;
+        fill: red;
+        color: red;
       }
   }
 
@@ -77,9 +97,13 @@
     margin-bottom: 30px;
 
     @media (min-width: base.$tablet) {
-        font-size: 28px;
-        font-weight: 600;
-      }
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    @media (min-width: base.$desktop) {
+      font-size: 38px;
+    }
   }
 
   &__describtion {
@@ -87,8 +111,8 @@
     margin-bottom: 30px;
 
     @media (min-width: base.$tablet) {
-        font-size: 18px;
-      }
+      font-size: 18px;
+    }
   }
 
   &__button {
@@ -98,6 +122,13 @@
 
     @media (min-width: base.$tablet) {
         font-size: 16px;
+    }
+
+    @media (min-width: base.$desktop) {
+      height: 60px;
+      width: 220px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
