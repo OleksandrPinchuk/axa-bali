@@ -5,9 +5,9 @@
   padding-top: 30px;
 
   @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
-      padding-top: 60px;
-      @include base.container-tab;
-    }
+    padding-top: 60px;
+    @include base.container-tab;
+  }
 
   @media only screen and (min-width: base.$desktop) {
     max-width: 1300px;
@@ -15,44 +15,11 @@
     @include base.container-desc;
   }
 
-  &__list {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-    gap: 30px;
-  }
-
-  &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  &__slogan {
-    font-size: 12px;
-  }
-
-  &__svg {
-
-    & use {
-      fill: base.$accent-color;
-    }
-  }
-
-  &__content {
-    display: flex;
-    gap: 20px;
-    padding-bottom: 30px;
-  }
-
-
-  &__link{
+  &__link {
     margin-bottom: 30px;
     font-family: "Bricolage Grotesque", sans-serif;
     display: block;
-    font-size: 16px;
-    // font-size: 18px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.5;
@@ -60,15 +27,15 @@
     text-align: center;
 
     @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
-        font-size: 22px;
-      }
+      font-size: 22px;
+    }
 
     @media only screen and (min-width: base.$desktop) {
       margin-bottom: 60px;
       font-size: 26px;
     }
 
-    &:hover{
+    &:hover {
       color: base.$accent-color;
     }
   }
@@ -79,45 +46,45 @@
     border-radius: base.$border-radius;
 
     @media only screen and (min-width: base.$desktop) {
-        padding: 60px;
-      }
+      padding: 60px;
+    }
   }
 
   &__framer {
     @media only screen and (min-width: base.$desktop) {
-        display: flex;
-        gap: 30px;
-      }
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &__info {
     @media only screen and (min-width: base.$desktop) {
-        max-width: 550px;
-      }
+      max-width: 550px;
+    }
   }
 
-  &__header{
-      margin-bottom: 20px;
-      font-size: 28px;
-      font-weight: 600;
-      line-height: 1.2;
-      color: #144444;
-      text-align: center;
+  &__header {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #144444;
+    text-align: center;
 
-      @media (min-width: (base.$tablet)) {
-        font-size: 32px;
-      }
+    @media (min-width: (base.$tablet)) {
+      font-size: 32px;
+    }
 
-      // @media only screen and (min-width: base.$desktop) {
-      //   font-size: 32px;
-      // }
+    // @media only screen and (min-width: base.$desktop) {
+    //   font-size: 32px;
+    // }
   }
 
   &__text {
     font-size: 16px;
 
     @media only screen and (min-width: base.$desktop) {
-        font-size: 18px;
+      font-size: 18px;
     }
   }
 
@@ -127,8 +94,8 @@
     border-radius: base.$border-radius;
 
     @media (min-width: (base.$tablet)) {
-        height: 350px;
-      }
+      height: 350px;
+    }
 
 
     & img {
@@ -144,7 +111,7 @@
 
 
 
-  &__button{
+  &__button {
     @include base.button;
     margin: 30px auto;
 

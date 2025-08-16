@@ -188,8 +188,11 @@ main {
 }
 
 .home {
-  background: linear-gradient(to bottom, #dee9e7 0%, #ffffff 50%, rgb(31, 42, 54) 50%, rgb(31, 42, 54) 100%);
-  height: 460px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/home-img.jpg");
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @media (min-width: 810px) {
   .home {
@@ -223,10 +226,10 @@ main {
 }
 .home__header {
   margin-bottom: 30px;
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 38px;
+  font-weight: 400;
   line-height: 1.2;
-  color: #144444;
+  color: white;
   text-align: center;
 }
 @media (min-width: 810px) {
@@ -273,8 +276,10 @@ main {
   font-weight: 400;
   line-height: 1.5;
   border-radius: 5px;
+  width: 200px;
+  height: 54px;
+  border: none;
   margin: 30px auto 0 auto;
-  border: solid 1px rgb(207, 216, 227);
 }
 @media only screen and (min-width: 1200px) {
   .home__button {
@@ -307,11 +312,34 @@ main {
     padding-right: 50px;
   }
 }
+.services__list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 30px;
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.services__slogan {
+  font-size: 12px;
+}
+.services__svg use {
+  fill: #55EDCA;
+}
+.services__content {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+}
 .services__link {
   margin-bottom: 30px;
   font-family: "Bricolage Grotesque", sans-serif;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.5;
