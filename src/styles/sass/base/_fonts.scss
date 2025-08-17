@@ -1,0 +1,20 @@
+// @font-face {
+//   font-family: "AGAvalancheC";
+//   src: url("https://db.onlinewebfonts.com/t/c777ff7746751b04b384029cdbb12b04.eot");
+//   src: url("https://db.onlinewebfonts.com/t/c777ff7746751b04b384029cdbb12b04.eot?#iefix")format("embedded-opentype"),
+//     url("https://db.onlinewebfonts.com/t/c777ff7746751b04b384029cdbb12b04.woff2")format("woff2"),
+//     url("https://db.onlinewebfonts.com/t/c777ff7746751b04b384029cdbb12b04.woff")format("woff"),
+//     url("https://db.onlinewebfonts.com/t/c777ff7746751b04b384029cdbb12b04.ttf")format("truetype"),
+//     url("https://db.onlinewebfonts.com/t/c777ff7746751b04b384029cdbb12b04.svg#AGAvalancheC")format("svg");
+// }
+
+@font-face {
+  font-family: "AGAvalancheC";
+  src: url('../../../fonts/AGAvalancheC.eot');
+  src: local(''),
+    url('../../../fonts/AGAvalancheC.eot?#iefix') format('embedded-opentype'),
+    url('../../../fonts/AGAvalancheC.woff2') format('woff2'),
+    url('../../../fonts/AGAvalancheC.woff') format('woff'),
+    url('../../../fonts/AGAvalancheC.ttf') format('truetype'),
+    url('../../../fonts/AGAvalancheC.svg#AGAvalancheC') format('svg');
+}
