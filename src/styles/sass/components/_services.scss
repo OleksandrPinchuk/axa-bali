@@ -2,16 +2,16 @@
 
 .services {
   @include base.container-mob;
-  padding-top: 30px;
+  padding-top: 15px;
 
-  @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
-      padding-top: 60px;
-      @include base.container-tab;
-    }
+  @media (min-width: base.$tablet) {
+    padding-top: 30px;
+    @include base.container-tab;
+  }
 
   @media only screen and (min-width: base.$desktop) {
     max-width: 1300px;
-    padding-top: 60px;
+    // padding-top: 30px;
     @include base.container-desc;
   }
 
@@ -20,6 +20,7 @@
     justify-content: center;
     padding-bottom: 30px;
     gap: 30px;
+
   }
 
   &__item {
@@ -33,10 +34,36 @@
     font-size: 12px;
   }
 
+  &__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: #A9A9A9;
+    // background-color: #C0C0C0;
+      // background-color: #E5E4E2;
+      // background-color: #B0C4DE;
+
+    @media (min-width: base.$tablet) {
+        width: 45px;
+        height: 45px;
+      }
+  }
+
+
   &__svg {
 
+    @media (min-width: base.$tablet) {
+        width: 30px;
+        height: 30px;
+    }
+
     & use {
-      fill: base.$accent-color;
+      fill: white;
+
     }
   }
 
@@ -44,12 +71,24 @@
     display: flex;
     gap: 20px;
     padding-bottom: 30px;
+
+    @media (min-width: base.$tablet) {
+      gap: 30px;
+    }
+  }
+
+  &__inner {
+    width: 350px;
+
+    @media (min-width: base.$tablet) {
+      width: 450px;
+    }
   }
 
 
   &__link{
     margin-bottom: 30px;
-    font-family: "Bricolage Grotesque", sans-serif;
+    // font-family: "Bricolage Grotesque", sans-serif;
     display: block;
     font-size: 16px;
     // font-size: 18px;
@@ -59,18 +98,18 @@
     color: base.$main-text-color;
     text-align: center;
 
-    @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
-        font-size: 22px;
+    @media (min-width: base.$tablet) {
+        font-size: 20px;
       }
 
-    @media only screen and (min-width: base.$desktop) {
+    @media (min-width: base.$desktop) {
       margin-bottom: 60px;
       font-size: 26px;
     }
 
-    &:hover{
-      color: base.$accent-color;
-    }
+    // &:hover{
+    //   color: base.$accent-color;
+    // }
   }
 
   &__box {
@@ -121,14 +160,37 @@
     }
   }
 
+  &__picture {
+    text-align: center;
+    overflow: hidden;
+    max-height: 180px;
+    border-radius: base.$border-radius;
+    width: 80%;
+
+    @media (min-width: (base.$tablet)) {
+        height: 250px;
+      }
+
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      border-radius: base.$border-radius;
+
+      // @media (min-width: (base.$tablet)) {
+      //   max-width: 100%;
+      // }
+    }
+  }
+
   &__image {
     text-align: center;
     overflow: hidden;
     border-radius: base.$border-radius;
 
     @media (min-width: (base.$tablet)) {
-        height: 350px;
-      }
+      height: 350px;
+    }
 
 
     & img {
