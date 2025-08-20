@@ -9,7 +9,7 @@
     @include base.container-tab;
   }
 
-  @media only screen and (min-width: base.$desktop) {
+  @media (min-width: base.$desktop) {
     max-width: 1300px;
     // padding-top: 30px;
     @include base.container-desc;
@@ -18,6 +18,8 @@
 
   &__top {
     background-color: base.$green-background-color;
+    padding: 0 15px 15px 15px ;
+    margin-bottom: 30px;
   }
 
   &__list {
@@ -26,6 +28,10 @@
     padding-bottom: 30px;
     gap: 30px;
 
+    @media (min-width: base.$tablet) {
+        gap: 60px;
+      }
+
   }
 
   &__item {
@@ -33,6 +39,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
   }
 
   &__slogan {
@@ -81,6 +88,92 @@
       gap: 30px;
     }
   }
+
+  &__flex {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__a {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__b {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__c {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__bild {
+    text-align: center;
+    overflow: hidden;
+    max-height: 180px;
+    border-radius: base.$border-radius;
+    width: 50%;
+
+    @media (min-width: (base.$tablet)) {
+      height: 250px;
+    }
+
+
+    & img {
+      max-width: 100%;
+      height: auto;
+      border-radius: base.$border-radius;
+
+      // @media (min-width: (base.$tablet)) {
+      //   max-width: 100%;
+      // }
+    }
+  }
+
+    /* Анімація скролу */
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Контейнер для тексту */
+    .marquee-container {
+      position: relative;
+      margin-bottom: 30px;
+      width: 100%;
+      overflow: hidden;
+      background: transparent;
+      /* можна додати фон, якщо потрібно */
+      white-space: nowrap;
+    }
+
+    /* Сам текст */
+    .marquee-text {
+      display: inline-block;
+      padding-left: 10%;
+      /* щоб був відступ перед стартом */
+      font-size: 28px;
+      /* розмір тексту */
+      font-weight: 700;
+      animation: marquee 40s linear infinite;
+      /* швидкість 15s */
+    }
+
+
+
 
   &__inner {
     width: 350px;

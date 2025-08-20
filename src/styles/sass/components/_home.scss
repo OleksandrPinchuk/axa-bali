@@ -45,7 +45,8 @@
 
   &__header{
   margin-bottom: 60px;
-  font-size: 38px;
+  // font-size: 38px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 1.2;
   // color: #144444;
@@ -54,7 +55,7 @@
 
     @media (min-width: (base.$tablet)) {
         margin-bottom: 80px;
-        font-size: 48px;
+        font-size: 38px;
       }
 
       @media (min-width: base.$desktop) {

@@ -279,7 +279,7 @@ main {
 }
 .home__header {
   margin-bottom: 60px;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 400;
   line-height: 1.2;
   color: white;
@@ -288,7 +288,7 @@ main {
 @media (min-width: 810px) {
   .home__header {
     margin-bottom: 80px;
-    font-size: 48px;
+    font-size: 38px;
   }
 }
 @media (min-width: 1200px) {
@@ -338,6 +338,9 @@ main {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
+  /* Анімація скролу */
+  /* Контейнер для тексту */
+  /* Сам текст */
 }
 @media (min-width: 810px) {
   .services {
@@ -346,7 +349,7 @@ main {
     padding-right: 30px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .services {
     max-width: 1300px;
     margin: 0 auto;
@@ -357,12 +360,19 @@ main {
 }
 .services__top {
   background-color: #dee9e7;
+  padding: 0 15px 15px 15px;
+  margin-bottom: 30px;
 }
 .services__list {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
   gap: 30px;
+}
+@media (min-width: 810px) {
+  .services__list {
+    gap: 60px;
+  }
 }
 .services__item {
   display: flex;
@@ -407,6 +417,72 @@ main {
   .services__content {
     gap: 30px;
   }
+}
+.services__flex {
+  display: flex;
+  gap: 30px;
+}
+.services__a {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.services__b {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+.services__c {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+.services__bild {
+  text-align: center;
+  overflow: hidden;
+  max-height: 180px;
+  border-radius: 10px;
+  width: 50%;
+}
+@media (min-width: 810px) {
+  .services__bild {
+    height: 250px;
+  }
+}
+.services__bild img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.services .marquee-container {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  /* можна додати фон, якщо потрібно */
+  white-space: nowrap;
+}
+.services .marquee-text {
+  display: inline-block;
+  padding-left: 10%;
+  /* щоб був відступ перед стартом */
+  font-size: 28px;
+  /* розмір тексту */
+  font-weight: 700;
+  animation: marquee 40s linear infinite;
+  /* швидкість 15s */
 }
 .services__inner {
   width: 350px;
