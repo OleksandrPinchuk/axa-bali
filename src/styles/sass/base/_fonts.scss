@@ -8,13 +8,116 @@
 //     url("https://db.onlinewebfonts.com/t/c777ff7746751b04b384029cdbb12b04.svg#AGAvalancheC")format("svg");
 // }
 
+// @font-face {
+//   font-family: "AGAvalancheC";
+//   src: url('../../../fonts/AGAvalancheC.eot');
+//   src: local(''),
+//     url('../../../fonts/AGAvalancheC.eot?#iefix') format('embedded-opentype'),
+//     url('../../../fonts/AGAvalancheC.woff2') format('woff2'),
+//     url('../../../fonts/AGAvalancheC.woff') format('woff'),
+//     url('../../../fonts/AGAvalancheC.ttf') format('truetype'),
+//     url('../../../fonts/AGAvalancheC.svg#AGAvalancheC') format('svg');
+// }
+
+// @font-face {
+//   font-family: 'TT Travels Next';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('');
+//   /* IE9 Compat Modes */
+//   src: local(''),
+//     url('../fonts/roboto-v30-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'),
+//     /* IE6-IE8 */
+//     url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
+//     /* Super Modern Browsers */
+//     url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'),
+//     /* Modern Browsers */
+//     url('../fonts/roboto-v30-latin_cyrillic-regular.ttf') format('truetype'),
+//     /* Safari, Android, iOS */
+//     url('../fonts/roboto-v30-latin_cyrillic-regular.svg#Roboto') format('svg');
+//   /* Legacy iOS */
+// }
+
+// @font-face {
+//   font-family: 'TT Travels Next';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url('../../../fonts/eot/TT_Travels_Next_Medium.eot');
+//   src: local(''),
+//     url('../../../fonts/eot/TT_Travels_Next_Medium.eot?#iefix') format('embedded-opentype'),
+//     url('../../../fonts/woff2/TT_Travels_Next_Medium.woff2') format('woff2'),
+//     url('../../../fonts/woff/TT_Travels_Next_Medium.woff') format('woff'),
+//     url('../../../fonts/ttf/TT_Travels_Next_Medium.ttf') format('truetype');
+// }
+
+// @font-face {
+//   font-family: 'TT Travels Next';
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url('../../../fonts/eot/TT_Travels_Next_DemiBold.eot');
+//     src: local(''),
+//       url('../../../fonts/eot/TT_Travels_Next_DemiBold.eot?#iefix') format('embedded-opentype'),
+//       url('../../../fonts/woff2/TT_Travels_Next_DemiBold.woff2') format('woff2'),
+//       url('../../../fonts/woff/TT_Travels_Next_DemiBold.woff') format('woff'),
+//       url('../../../fonts/ttf/TT_Travels_Next_DemiBold.ttf') format('truetype');
+// }
+
 @font-face {
-  font-family: "AGAvalancheC";
-  src: url('../../../fonts/AGAvalancheC.eot');
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../fonts/TTTravels-400.eot');
   src: local(''),
-    url('../../../fonts/AGAvalancheC.eot?#iefix') format('embedded-opentype'),
-    url('../../../fonts/AGAvalancheC.woff2') format('woff2'),
-    url('../../../fonts/AGAvalancheC.woff') format('woff'),
-    url('../../../fonts/AGAvalancheC.ttf') format('truetype'),
-    url('../../../fonts/AGAvalancheC.svg#AGAvalancheC') format('svg');
+    url('../../../fonts/TTTravels-400.eo?#iefix') format('embedded-opentype'),
+    url('../../../fonts/TTTravels-400.woff2') format('woff2'),
+    url('../../../fonts/TTTravels-400.woff') format('woff'),
+    url('../../../fonts/TTTravels-400.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../../fonts/TTTravels-500.eot');
+  src: local(''),
+    url('../../../fonts/TTTravels-500.eo?#iefix') format('embedded-opentype'),
+    url('../../../fonts/TTTravels-500.woff2') format('woff2'),
+    url('../../../fonts/TTTravels-500.woff') format('woff'),
+    url('../../../fonts/TTTravels-500.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../../fonts/TTTravels-600.eot');
+  src: local(''),
+    url('../../../fonts/TTTravels-600.eo?#iefix') format('embedded-opentype'),
+    url('../../../fonts/TTTravels-600.woff2') format('woff2'),
+    url('../../../fonts/TTTravels-600.woff') format('woff'),
+    url('../../../fonts/TTTravels-600.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../../fonts/TTTravels-700.eot');
+  src: local(''),
+    url('../../../fonts/TTTravels-700.eo?#iefix') format('embedded-opentype'),
+    url('../../../fonts/TTTravels-700.woff2') format('woff2'),
+    url('../../../fonts/TTTravels-700.woff') format('woff'),
+    url('../../../fonts/TTTravels-700.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'TT Travels';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../../../fonts/TTTravels-900.eot');
+  src: local(''),
+    url('../../../fonts/TTTravels-900.eo?#iefix') format('embedded-opentype'),
+    url('../../../fonts/TTTravels-900.woff2') format('woff2'),
+    url('../../../fonts/TTTravels-900.woff') format('woff'),
+    url('../../../fonts/TTTravels-900.ttf') format('truetype'),
 }

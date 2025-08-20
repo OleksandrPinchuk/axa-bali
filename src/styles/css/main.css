@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: "AGAvalancheC", sans-serif;
+  font-family: "TT Travels", sans-serif;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
@@ -65,9 +65,39 @@ html {
 }
 
 @font-face {
-  font-family: "AGAvalancheC";
-  src: url("../../../fonts/AGAvalancheC.eot");
-  src: local(""), url("../../../fonts/AGAvalancheC.eot?#iefix") format("embedded-opentype"), url("../../../fonts/AGAvalancheC.woff2") format("woff2"), url("../../../fonts/AGAvalancheC.woff") format("woff"), url("../../../fonts/AGAvalancheC.ttf") format("truetype"), url("../../../fonts/AGAvalancheC.svg#AGAvalancheC") format("svg");
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../fonts/TTTravels-400.eot");
+  src: local(""), url("../../../fonts/TTTravels-400.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-400.woff2") format("woff2"), url("../../../fonts/TTTravels-400.woff") format("woff"), url("../../../fonts/TTTravels-400.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../../fonts/TTTravels-500.eot");
+  src: local(""), url("../../../fonts/TTTravels-500.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-500.woff2") format("woff2"), url("../../../fonts/TTTravels-500.woff") format("woff"), url("../../../fonts/TTTravels-500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../../fonts/TTTravels-600.eot");
+  src: local(""), url("../../../fonts/TTTravels-600.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-600.woff2") format("woff2"), url("../../../fonts/TTTravels-600.woff") format("woff"), url("../../../fonts/TTTravels-600.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../../fonts/TTTravels-700.eot");
+  src: local(""), url("../../../fonts/TTTravels-700.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-700.woff2") format("woff2"), url("../../../fonts/TTTravels-700.woff") format("woff"), url("../../../fonts/TTTravels-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Travels";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../../fonts/TTTravels-900.eot");
+  src: local(""), url("../../../fonts/TTTravels-900.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-900.woff2") format("woff2"), url("../../../fonts/TTTravels-900.woff") format("woff"), url("../../../fonts/TTTravels-900.ttf") format("truetype");
 }
 .is-hidden {
   position: absolute;
@@ -87,8 +117,6 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(245, 250, 252);
-  border-bottom: 1px solid #e0e0e0;
   z-index: 1000;
 }
 .header__container {
@@ -181,13 +209,11 @@ html {
   justify-content: center;
   border: none;
   height: 100%;
-  background-color: rgb(245, 250, 252);
   color: black;
 }
 .menu__button svg {
   width: 40px;
   height: 40px;
-  overflow-clip-margin: content-box;
   overflow: hidden;
 }
 @media screen and (max-width: 1199px) {
@@ -206,8 +232,9 @@ main {
 }
 
 .home {
+  margin-top: -82px;
   background-image: url("/images/home-img.jpg");
-  height: 400px;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -220,7 +247,7 @@ main {
 .home__container {
   width: 100%;
   height: 100%;
-  padding: 50px 0;
+  padding: 160px 0;
   min-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
@@ -228,7 +255,7 @@ main {
 }
 @media (min-width: 810px) and (max-width: 1199px) {
   .home__container {
-    padding-top: 80px;
+    padding-top: 180px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -243,6 +270,12 @@ main {
     padding-left: 50px;
     padding-right: 50px;
   }
+}
+.home__box {
+  display: flex;
+}
+.home__name {
+  width: 50%;
 }
 .home__header {
   margin-bottom: 60px;
@@ -261,6 +294,22 @@ main {
 @media (min-width: 1200px) {
   .home__header {
     margin-bottom: 100px;
+  }
+}
+.home__bali {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.2;
+  color: white;
+  text-align: center;
+}
+@media (min-width: 810px) {
+  .home__bali {
+    font-weight: 900;
+    font-size: 68px;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
   }
 }
 .home__button {
@@ -289,11 +338,9 @@ main {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 15px;
 }
 @media (min-width: 810px) {
   .services {
-    padding-top: 30px;
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -307,6 +354,9 @@ main {
     padding-left: 50px;
     padding-right: 50px;
   }
+}
+.services__top {
+  background-color: #dee9e7;
 }
 .services__list {
   display: flex;

@@ -5,8 +5,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(245, 250, 252);
-  border-bottom: 1px solid #e0e0e0;
+  // background-color: rgb(245, 250, 252);
+  // border-bottom: 1px solid #e0e0e0;
   z-index: 1000;
 
   &__container{
@@ -111,14 +111,14 @@
   justify-content: center;
   border: none;
   height: 100%;
-  background-color: rgb(245, 250, 252);
+  // background-color: rgb(245, 250, 252);
   color: black;
 
   svg{
     width: 40px;
     height: 40px;
-    overflow-clip-margin: content-box;
-      overflow: hidden;
+    // overflow-clip-margin: content-box;
+    overflow: hidden;
   }
   @media screen and (max-width: 1199px) {
       display: flex;

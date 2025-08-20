@@ -2,10 +2,10 @@
 
 .services {
   @include base.container-mob;
-  padding-top: 15px;
+  // padding-top: 15px;
 
   @media (min-width: base.$tablet) {
-    padding-top: 30px;
+    // padding-top: 30px;
     @include base.container-tab;
   }
 
@@ -13,6 +13,11 @@
     max-width: 1300px;
     // padding-top: 30px;
     @include base.container-desc;
+
+  }
+
+  &__top {
+    background-color: base.$green-background-color;
   }
 
   &__list {

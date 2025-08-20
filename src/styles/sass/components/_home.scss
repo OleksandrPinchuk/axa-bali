@@ -1,10 +1,13 @@
 @use '../base';
 
 .home{
+  // position: relative;
+  margin-top: -82px;
   // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/home-img.jpg');
   // margin-top: 82px;
   background-image: url('/images/home-img.jpg');
-  height: 400px;
+  // height: 400px;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,11 +19,12 @@
   &__container{
     width: 100%;
     height: 100%;
-    padding: 50px 0;
+    padding: 160px 0;
     @include base.container-mob;
 
     @media (min-width: base.$tablet) and (max-width: (base.$desktop - 1)) {
-      padding-top: 80px;
+      // padding-top: 80px;
+      padding-top: 180px;
       @include base.container-tab;
     }
 
@@ -29,6 +33,14 @@
       padding-top: 100px;
       @include base.container-desc;
     }
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__name {
+    width: 50%;
   }
 
   &__header{
@@ -47,6 +59,25 @@
 
       @media (min-width: base.$desktop) {
         margin-bottom: 100px;
+      }
+  }
+
+  &__bali {
+
+    font-weight: 700;
+      font-size: 38px;
+      line-height: 1.2;
+      // color: #144444;
+      color: white;
+      text-align: center;
+
+    @media (min-width: (base.$tablet)) {
+        font-weight: 900;
+          font-size: 68px;
+          line-height: 1.2;
+          // color: #144444;
+          color: white;
+          text-align: center;
       }
   }
 
