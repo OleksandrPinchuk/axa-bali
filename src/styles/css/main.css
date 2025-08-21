@@ -162,7 +162,7 @@ html {
   z-index: 9;
 }
 .header.scrolled {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #1F2A36;
 }
 .header__container {
   padding: 15px 15px 15px 15px;
