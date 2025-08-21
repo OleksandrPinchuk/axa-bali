@@ -2,7 +2,7 @@
 
 .mobile-menu {
   position: fixed;
-  top: 80px;
+  top: 0px;
   left: 0px;
   width: 100%;
   z-index: 9;
@@ -26,9 +26,9 @@
       background-color: base.$black-background-color;
     }
 
-  &-menu-nav {
+  // &-menu-nav {
 
-  }
+  // }
 }
 
 .mobile-link {

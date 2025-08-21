@@ -30,7 +30,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "AGAvalancheC", sans-serif;
+  font-family: "TT Travels", sans-serif;
 }
 
 ul,
@@ -65,39 +65,80 @@ html {
 }
 
 @font-face {
+  font-family: "Alcantera";
+  src: url("../../../fonts/name/Alcantera-Script.ttf");
+}
+@font-face {
+  font-family: "AGAvalancheC";
+  src: url("../../../fonts/AGAvalancheC/AGAvalancheC.eot");
+  src: local(""), url("../../../fonts/AGAvalancheC/AGAvalancheC.eot?#iefix") format("embedded-opentype"), url("../../../fonts/AGAvalancheC/AGAvalancheC.woff2") format("woff2"), url("../../../fonts/AGAvalancheC/AGAvalancheC.woff") format("woff"), url("../../../fonts/AGAvalancheC/AGAvalancheC.ttf") format("truetype"), url("../../../fonts/AGAvalancheC/AGAvalancheC.svg#AGAvalancheC") format("svg");
+}
+@font-face {
   font-family: "TT Travels";
   font-style: normal;
   font-weight: 400;
   src: url("../../../fonts/TTTravels-400.eot");
-  src: local(""), url("../../../fonts/TTTravels-400.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-400.woff2") format("woff2"), url("../../../fonts/TTTravels-400.woff") format("woff"), url("../../../fonts/TTTravels-400.ttf") format("truetype");
+  src: local(""), url("../../../fonts/TTTravels-400.eot?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-400.woff2") format("woff2"), url("../../../fonts/TTTravels-400.woff") format("woff"), url("../../../fonts/TTTravels-400.ttf") format("truetype");
 }
 @font-face {
   font-family: "TT Travels";
   font-style: normal;
   font-weight: 500;
   src: url("../../../fonts/TTTravels-500.eot");
-  src: local(""), url("../../../fonts/TTTravels-500.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-500.woff2") format("woff2"), url("../../../fonts/TTTravels-500.woff") format("woff"), url("../../../fonts/TTTravels-500.ttf") format("truetype");
+  src: local(""), url("../../../fonts/TTTravels-500.eot?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-500.woff2") format("woff2"), url("../../../fonts/TTTravels-500.woff") format("woff"), url("../../../fonts/TTTravels-500.ttf") format("truetype");
 }
 @font-face {
   font-family: "TT Travels";
   font-style: normal;
   font-weight: 600;
   src: url("../../../fonts/TTTravels-600.eot");
-  src: local(""), url("../../../fonts/TTTravels-600.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-600.woff2") format("woff2"), url("../../../fonts/TTTravels-600.woff") format("woff"), url("../../../fonts/TTTravels-600.ttf") format("truetype");
+  src: local(""), url("../../../fonts/TTTravels-600.eot?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-600.woff2") format("woff2"), url("../../../fonts/TTTravels-600.woff") format("woff"), url("../../../fonts/TTTravels-600.ttf") format("truetype");
 }
 @font-face {
   font-family: "TT Travels";
   font-style: normal;
   font-weight: 700;
   src: url("../../../fonts/TTTravels-700.eot");
-  src: local(""), url("../../../fonts/TTTravels-700.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-700.woff2") format("woff2"), url("../../../fonts/TTTravels-700.woff") format("woff"), url("../../../fonts/TTTravels-700.ttf") format("truetype");
+  src: local(""), url("../../../fonts/TTTravels-700.eot?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-700.woff2") format("woff2"), url("../../../fonts/TTTravels-700.woff") format("woff"), url("../../../fonts/TTTravels-700.ttf") format("truetype");
 }
 @font-face {
   font-family: "TT Travels";
   font-style: normal;
   font-weight: 900;
   src: url("../../../fonts/TTTravels-900.eot");
-  src: local(""), url("../../../fonts/TTTravels-900.eo?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-900.woff2") format("woff2"), url("../../../fonts/TTTravels-900.woff") format("woff"), url("../../../fonts/TTTravels-900.ttf") format("truetype");
+  src: local(""), url("../../../fonts/TTTravels-900.eot?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-900.woff2") format("woff2"), url("../../../fonts/TTTravels-900.woff") format("woff"), url("../../../fonts/TTTravels-900.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Travels Next";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../../fonts/TTTravels-Next/trial/TTTravels-Next-400.ttf");
+}
+@font-face {
+  font-family: "TT Travels Next";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../../fonts/TTTravels-Next/TT_Travels_Next_500.eot");
+  src: local(""), url("../../../fonts/TTTravels-Next/TT_Travels_Next_500.eot?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-Next/TT_Travels_Next_500.woff2") format("woff2"), url("../../../fonts/TTTravels-Next/TT_Travels_Next_500.woff") format("woff"), url("../../../fonts/TTTravels-Next/TT_Travels_Next_500.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Travels Next";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../../fonts/TTTravels-Next/TT_Travels_Next_600.eot");
+  src: local(""), url("../../../fonts/TTTravels-Next/TT_Travels_Next_600.eot?#iefix") format("embedded-opentype"), url("../../../fonts/TTTravels-Next/TT_Travels_Next_600.woff2") format("woff2"), url("../../../fonts/TTTravels-Next/TT_Travels_Next_600.woff") format("woff"), url("../../../fonts/TTTravels-Next/TT_Travels_Next_600.ttf") format("truetype");
+}
+@font-face {
+  font-family: "TT Travels Next";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../../fonts/TTTravels-Next/trial/TTTravels-Next-700.ttf");
+}
+@font-face {
+  font-family: "TT Travels Next";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../../fonts/TTTravels-Next/trial/TTTravels-Next-900.ttf");
 }
 .is-hidden {
   position: absolute;
@@ -117,7 +158,11 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  background-color: transparent;
+  z-index: 9;
+}
+.header.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .header__container {
   padding: 15px 15px 15px 15px;
@@ -155,10 +200,9 @@ html {
   }
 }
 .header__link {
-  font-family: "Bricolage Grotesque" sans-serif;
   font-size: 16px;
   line-height: 1.2;
-  color: rgb(20, 68, 68);
+  color: #E6DADA;
   transition: 200ms ease-in;
 }
 .header__link:hover, .header__link:focus {
@@ -192,7 +236,7 @@ html {
 
 .active {
   border-bottom: 2px solid #144444;
-  color: #144444;
+  color: #55EDCA;
 }
 
 .logo__img {
@@ -209,7 +253,8 @@ html {
   justify-content: center;
   border: none;
   height: 100%;
-  color: black;
+  fill: white;
+  background-color: transparent;
 }
 .menu__button svg {
   width: 40px;
@@ -253,7 +298,7 @@ main {
   padding-left: 16px;
   padding-right: 16px;
 }
-@media (min-width: 810px) and (max-width: 1199px) {
+@media (min-width: 810px) {
   .home__container {
     padding-top: 180px;
     margin: 0 auto;
@@ -264,22 +309,30 @@ main {
 @media only screen and (min-width: 1200px) {
   .home__container {
     max-width: 1300px;
-    padding-top: 100px;
     margin: 0 auto;
     max-width: 1300px;
     padding-left: 50px;
     padding-right: 50px;
   }
 }
-.home__box {
-  display: flex;
+@media (min-width: 810px) {
+  .home__box {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
 }
 .home__name {
-  width: 50%;
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media (min-width: 810px) {
+  .home__name {
+    margin-bottom: 0px;
+  }
 }
 .home__header {
-  margin-bottom: 60px;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 1.2;
   color: white;
@@ -287,29 +340,31 @@ main {
 }
 @media (min-width: 810px) {
   .home__header {
-    margin-bottom: 80px;
-    font-size: 38px;
+    font-size: 32px;
+    text-align: end;
   }
 }
 @media (min-width: 1200px) {
   .home__header {
-    margin-bottom: 100px;
+    font-size: 42px;
   }
 }
 .home__bali {
-  font-weight: 700;
-  font-size: 38px;
+  font-weight: 900;
+  font-size: 48px;
   line-height: 1.2;
   color: white;
   text-align: center;
 }
 @media (min-width: 810px) {
   .home__bali {
-    font-weight: 900;
-    font-size: 68px;
-    line-height: 1.2;
-    color: white;
-    text-align: center;
+    font-size: 72px;
+    text-align: start;
+  }
+}
+@media (min-width: 1200px) {
+  .home__bali {
+    font-size: 80px;
   }
 }
 .home__button {
@@ -324,7 +379,7 @@ main {
   width: 200px;
   height: 54px;
   border: none;
-  margin: 30px auto 0 auto;
+  margin: 60px auto 0 auto;
 }
 @media only screen and (min-width: 1200px) {
   .home__button {
@@ -1522,7 +1577,7 @@ main {
 
 .mobile-menu {
   position: fixed;
-  top: 80px;
+  top: 0px;
   left: 0px;
   width: 100%;
   z-index: 9;
@@ -1546,6 +1601,7 @@ main {
   flex-direction: column;
   background-color: #1F2A36;
 }
+
 .mobile-link {
   font-weight: 500;
   font-size: 22px;
