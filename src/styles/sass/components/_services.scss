@@ -1,6 +1,8 @@
 @use '../base';
 
 .services {
+  position: relative;
+
   @include base.container-mob;
   // padding-top: 15px;
 
@@ -18,15 +20,20 @@
 
   &__top {
     background-color: base.$green-background-color;
-    padding: 0 15px 15px 15px ;
+    padding: 80px 15px 15px 15px ;
     margin-bottom: 30px;
   }
 
   &__list {
     display: flex;
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
     justify-content: center;
     padding-bottom: 30px;
     gap: 30px;
+
 
     @media (min-width: base.$tablet) {
         gap: 60px;
@@ -50,11 +57,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
     margin-bottom: 10px;
     border-radius: 50%;
-    background: #A9A9A9;
+    background: base.$black-background-color;
+    // background: #A9A9A9;
     // background-color: #C0C0C0;
       // background-color: #E5E4E2;
       // background-color: #B0C4DE;

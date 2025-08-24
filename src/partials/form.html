@@ -1,1 +1,34 @@
-3
+<div class="form js-form-container" id="form">
+  <div class="form__container">
+    <button type="button" class="form__close js-close-form">
+      <svg width="34" height="34" aria-label="Toggle form">
+        <use href="/images/mob-menu.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="form__header">Зв'яжіться з нами</h2>
+    <form class="form__form">
+      <label class="form__field">
+        <!-- <span class="form__label">Ім'я</span> -->
+        <input type="text" name="username" placeholder="Ім'я*" class="form__input">
+      </label>
+      <label class="form__field">
+        <!-- <span class="form__label">Телефон</span> -->
+        <input type="tel" name="usertel" placeholder="Телефон*" class="form__input">
+      </label>
+      <label class="form__field">
+        <!-- <span class="form__label">Пошта</span> -->
+        <input type="email" name="usermail" placeholder="email*"  class="form__input">
+      </label>
+      <label class="form__coment">
+        <span class="form__label">Коментар</span>
+        <textarea name="coment" placeholder="Введіть текст" class="form__textarea"></textarea>
+      </label>
+      <label class="form__check">
+        <input type="checkbox" name="terms" class="form__input--hidden">
+        <span class="form__img"></span>
+        <span class="form__conditions">Я приймаю <a href="" class="form__link">Умови договору</a></span>
+      </label>
+      <button type="submit" class="form__submit">Відправити</button>
+    </form>
+  </div>
+</div>
