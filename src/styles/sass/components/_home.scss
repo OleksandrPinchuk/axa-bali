@@ -7,13 +7,17 @@
   // margin-top: 82px;
   background-image: url('/images/home-img.jpg');
   // height: 400px;
-  height: 500px;
+  height: 540px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+  @media (min-width: base.$mobile) {
+    height: 590px;
+  }
+
   @media (min-width: base.$tablet) {
-      height: 500px;
+      height: 650px;
     }
 
   &__container{
@@ -28,7 +32,7 @@
       @include base.container-tab;
     }
 
-    @media only screen and (min-width: base.$desktop) {
+    @media (min-width: base.$desktop) {
       max-width: 1300px;
       // padding-top: 100px;
       @include base.container-desc;
@@ -46,7 +50,7 @@
   &__name {
     width: 100%;
     margin-bottom: 30px;
-    @media (min-width: (base.$tablet)) {
+    @media (min-width: base.$tablet) {
       // width: 50%;
       margin-bottom: 0px;
     }
@@ -60,18 +64,20 @@
   font-size: 30px;
   font-weight: 400;
   line-height: 1.2;
+  font-weight: 500;
   // color: #144444;
   color: white;
   text-align: center;
 
     @media (min-width: (base.$tablet)) {
       // margin-bottom: 80px;
-      font-size: 32px;
+      font-size: 28px;
       text-align: end;
+      // font-weight: 500;
     }
 
     @media (min-width: base.$desktop) {
-      font-size: 42px;
+      font-size: 40px;
     }
   }
 
@@ -85,12 +91,12 @@
     text-align: center;
 
     @media (min-width: (base.$tablet)) {
-      font-size: 72px;
+      font-size: 68px;
       text-align: start;
     }
 
     @media (min-width: base.$desktop) {
-      font-size: 80px;
+      font-size: 82px;
     }
   }
 
@@ -136,10 +142,14 @@
     margin: 60px auto 0 auto ;
     // border: solid 1px rgb(207, 216, 227);
 
-    @media only screen and (min-width: base.$desktop) {
-        font-size: 16px;
-        width: 220px;
+    @media (min-width: base.$tablet) {
+        margin: 80px auto 0 auto;
       }
+
+    @media (min-width: base.$desktop) {
+      font-size: 16px;
+      width: 220px;
+    }
   }
 }
 

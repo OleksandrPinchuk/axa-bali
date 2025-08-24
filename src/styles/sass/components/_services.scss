@@ -22,6 +22,10 @@
     background-color: base.$green-background-color;
     padding: 80px 15px 15px 15px ;
     margin-bottom: 30px;
+
+    @media (min-width: base.$mobile) {
+      padding-top: 30px;
+    }
   }
 
   &__list {
@@ -33,11 +37,23 @@
     justify-content: center;
     padding-bottom: 30px;
     gap: 30px;
+    // color: base.$black-background-color;
+
+    @media (min-width: base.$mobile) {
+      top: -100px;
+      gap: 60px;
+      color: base.$white-color;
+    }
 
 
     @media (min-width: base.$tablet) {
-        gap: 60px;
-      }
+      top: -120px;
+      gap: 60px;
+    }
+
+    @media (min-width: base.$desktop) {
+      gap: 80px;
+    }
 
   }
 
@@ -51,6 +67,15 @@
 
   &__slogan {
     font-size: 12px;
+
+  @media (min-width: base.$tablet) {
+    font-size: 14px;
+  }
+
+  @media (min-width: base.$desktop) {
+    font-size: 16px;
+  }
+
   }
 
   &__circle {

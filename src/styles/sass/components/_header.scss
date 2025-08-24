@@ -10,8 +10,8 @@
   z-index: 9;
 
   &.scrolled {
-      background-color: base.$black-background-color;
-    }
+    background-color: base.$black-background-color;
+  }
 
   &__container{
     padding: 15px 15px 15px 15px;
@@ -83,6 +83,10 @@
     font-size: 16px;
     line-height: 1.5;
 
+    &.scrolled-btn {
+      border: 1px solid base.$white-text-color;
+    }
+
 
     @media screen and (max-width: 1199px) {
       display: none;
@@ -90,6 +94,9 @@
 
     @media screen and (min-width: 1200px) {
       display: block;
+      &.scrolled-btn {
+          border: 1px solid base.$white-text-color;
+        }
     }
   }
 }
