@@ -31,6 +31,14 @@
     }
   }
 
+  &__text {
+    position: absolute;
+    top: 64px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #46A6C4;
+  }
+
   &__nav {
     display: flex;
     align-items: center;

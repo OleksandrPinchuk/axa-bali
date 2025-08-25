@@ -208,6 +208,13 @@ html {
     padding: 15px 50px 15px 50px;
   }
 }
+.header__text {
+  position: absolute;
+  top: 64px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #46A6C4;
+}
 .header__nav {
   display: flex;
   align-items: center;
@@ -336,7 +343,6 @@ main {
   background-image: -webkit-image-set(url("/images/home-img.jpg") 1x, url("/images/home-img-x2.jpg") 2x);
   background-image: image-set(url("/images/home-img.jpg") 1x, url("/images/home-img-x2.jpg") 2x);
   height: 500px;
-  background-size: 300px 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -468,9 +474,6 @@ main {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
-  /* Анімація скролу */
-  /* Контейнер для тексту */
-  /* Сам текст */
 }
 @media (min-width: 768px) {
   .services {
@@ -492,6 +495,8 @@ main {
   background-color: #dee9e7;
   padding: 80px 15px 15px 15px;
   margin-bottom: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 @media (min-width: 480px) {
   .services__top {
@@ -591,9 +596,10 @@ main {
   gap: 30px;
 }
 .services__a {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 22px;
   line-height: 1.5;
+  text-align: center;
   margin-bottom: 20px;
 }
 .services__b {
@@ -622,33 +628,6 @@ main {
   height: auto;
   border-radius: 10px;
 }
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.services .marquee-container {
-  position: relative;
-  margin-bottom: 30px;
-  width: 100%;
-  overflow: hidden;
-  background: transparent;
-  /* можна додати фон, якщо потрібно */
-  white-space: nowrap;
-}
-.services .marquee-text {
-  display: inline-block;
-  padding-left: 5%;
-  /* щоб був відступ перед стартом */
-  font-size: 28px;
-  /* розмір тексту */
-  font-weight: 700;
-  animation: marquee 18s linear infinite;
-  /* швидкість 15s */
-}
 .services__inner {
   width: 350px;
 }
@@ -662,7 +641,7 @@ main {
   display: block;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.5;
   color: #144444;
   text-align: center;
@@ -768,6 +747,61 @@ main {
     width: 220px;
     font-size: 16px;
   }
+}
+
+/* Анімація скролу */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Контейнер для тексту */
+.marquee-container {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  overflow: hidden;
+  background: transparent; /* можна додати фон, якщо потрібно */
+  white-space: nowrap;
+}
+
+/* Сам текст */
+.marquee-text {
+  display: inline-block;
+  padding-left: 5%; /* щоб був відступ перед стартом */
+  font-size: 28px; /* розмір тексту */
+  font-weight: 700;
+  animation: marquee 20s linear infinite; /* швидкість 15s */
+}
+
+.marquee-text p {
+  display: inline-block;
+  margin: 0 20px; /* відстань між словами */
+  font-family: "Tabarra Shadow", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Чорний для непарних */
+.marquee-text p:nth-child(odd) {
+  color: #dee9e7;
+}
+
+/* Білий для парних */
+.marquee-text p:nth-child(even) {
+  color: #1F2A36;
+}
+
+/* Анімація */
+.marquee-text {
+  display: inline-block;
+  padding-left: 1%;
+  animation: marquee 36s linear infinite;
+  white-space: nowrap;
 }
 
 .objects {
