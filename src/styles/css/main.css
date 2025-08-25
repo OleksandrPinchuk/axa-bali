@@ -162,7 +162,7 @@ html {
 @font-face {
   font-family: "Tabarra Shadow";
   font-style: normal;
-  src: url("../../../fonts/name/Tabarra-Shadow-FFP.otf");
+  src: url("/fonts/name/Tabarra-Shadow-FFP.otf");
 }
 .is-hidden {
   position: absolute;
