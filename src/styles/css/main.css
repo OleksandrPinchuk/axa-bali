@@ -331,7 +331,8 @@ main {
 
 .home {
   margin-top: -82px;
-  background-image: url("/images/home-img.jpg");
+  background-image: -webkit-image-set(url("/images/home-img.jpg") 1x, url("/images/home-img-x2.jpg") 2x);
+  background-image: image-set(url("/images/home-img.jpg") 1x, url("/images/home-img-x2.jpg") 2x);
   height: 540px;
   background-repeat: no-repeat;
   background-position: center;
@@ -415,7 +416,6 @@ main {
 }
 .home__bali {
   font-family: "Tabarra Shadow";
-  font-weight: 900;
   font-size: 78px;
   line-height: 1.2;
   color: white;
@@ -487,13 +487,18 @@ main {
 }
 .services__top {
   background-color: #dee9e7;
-  padding: 30px 15px 15px 15px;
+  padding: 80px 15px 15px 15px;
   margin-bottom: 30px;
+}
+@media (min-width: 480px) {
+  .services__top {
+    padding-top: 30px;
+  }
 }
 .services__list {
   display: flex;
   position: absolute;
-  top: -110px;
+  top: -24px;
   left: 50%;
   transform: translateX(-50%);
   justify-content: center;
@@ -527,11 +532,11 @@ main {
 }
 .services__slogan {
   font-size: 12px;
-  color: white;
 }
 @media (min-width: 768px) {
   .services__slogan {
     font-size: 14px;
+    color: white;
   }
 }
 @media (min-width: 1025px) {

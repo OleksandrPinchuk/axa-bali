@@ -5,7 +5,13 @@
   margin-top: -82px;
   // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/home-img.jpg');
   // margin-top: 82px;
-  background-image: url('/images/home-img.jpg');
+  // background-image: url('/images/home-img.jpg');
+  background-image: -webkit-image-set(
+    url('/images/home-img.jpg') 1x,
+    url('/images/home-img-x2.jpg') 2x);
+  background-image: image-set(
+    url('/images/home-img.jpg') 1x,
+    url('/images/home-img-x2.jpg') 2x);
   // height: 400px;
   height: 540px;
   background-repeat: no-repeat;
@@ -90,7 +96,7 @@
   &__bali {
     // font-family: "Alcantera" ,sans-serif;
     font-family: 'Tabarra Shadow';
-    font-weight: 900;
+    // font-weight: 900;
     // font-size: 48px;
     font-size: 78px;
     line-height: 1.2;
