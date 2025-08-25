@@ -13,7 +13,8 @@
     url('/images/home-img.jpg') 1x,
     url('/images/home-img-x2.jpg') 2x);
   // height: 400px;
-  height: 540px;
+  height: 500px;
+  background-size: 300px 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -95,11 +96,11 @@
 
   &__bali {
     // font-family: "Alcantera" ,sans-serif;
-    font-family: 'Tabarra Shadow';
-    // font-weight: 900;
+    font-family: 'Tabarra Shadow', sans-serif;
+    font-weight: 400;
     // font-size: 48px;
     font-size: 78px;
-    line-height: 1.2;
+    // line-height: 1.2;
     // color: #144444;
     color: white;
     text-align: center;

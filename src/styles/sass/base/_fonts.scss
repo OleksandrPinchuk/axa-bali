@@ -149,5 +149,9 @@
 @font-face {
   font-family: 'Tabarra Shadow';
   font-style: normal;
-  src: url('/fonts/name/Tabarra-Shadow-FFP.otf');
+  src: url('/fonts/name/TabarraShadowFFP.woff2') format('woff2'),
+    url('/fonts/name/TabarraShadowFFP.woff') format('woff'),
+    url('/fonts/name/TabarraShadowFFP.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }

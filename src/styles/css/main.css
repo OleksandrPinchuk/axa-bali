@@ -162,7 +162,9 @@ html {
 @font-face {
   font-family: "Tabarra Shadow";
   font-style: normal;
-  src: url("/fonts/name/Tabarra-Shadow-FFP.otf");
+  src: url("/fonts/name/TabarraShadowFFP.woff2") format("woff2"), url("/fonts/name/TabarraShadowFFP.woff") format("woff"), url("/fonts/name/TabarraShadowFFP.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 .is-hidden {
   position: absolute;
@@ -333,7 +335,8 @@ main {
   margin-top: -82px;
   background-image: -webkit-image-set(url("/images/home-img.jpg") 1x, url("/images/home-img-x2.jpg") 2x);
   background-image: image-set(url("/images/home-img.jpg") 1x, url("/images/home-img-x2.jpg") 2x);
-  height: 540px;
+  height: 500px;
+  background-size: 300px 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -415,9 +418,9 @@ main {
   }
 }
 .home__bali {
-  font-family: "Tabarra Shadow";
+  font-family: "Tabarra Shadow", sans-serif;
+  font-weight: 400;
   font-size: 78px;
-  line-height: 1.2;
   color: white;
   text-align: center;
 }
