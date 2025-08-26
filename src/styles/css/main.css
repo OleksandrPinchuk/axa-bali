@@ -340,8 +340,7 @@ main {
 
 .home {
   margin-top: -82px;
-  background-image: -webkit-image-set(url("/images/home-img.jpg") 1x, url("/images/home-img-x2.jpg") 2x);
-  background-image: image-set(url("/images/home-img.jpg") 1x, url("/images/home-img-x2.jpg") 2x);
+  background-image: image-set(url("/images/home-mob.jpeg") 1x, url("/images/home-mob.jpeg") 2x);
   height: 500px;
   background-repeat: no-repeat;
   background-position: center;
